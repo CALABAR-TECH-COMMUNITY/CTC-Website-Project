@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App text-red">
       CTC Website
+      <p>Sorted</p>
     </div>
   )
 }
