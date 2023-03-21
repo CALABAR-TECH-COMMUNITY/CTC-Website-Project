@@ -28,7 +28,7 @@ const PageNotFound = (): JSX.Element => {
       <span className="text-lg md:text-xl font-semibold text-center">
         Let's get you back
         <button className="ml-3" onClick={handleNavigation} type="button">
-          Home fdd
+          Home
         </button>
       </span>
     </main>

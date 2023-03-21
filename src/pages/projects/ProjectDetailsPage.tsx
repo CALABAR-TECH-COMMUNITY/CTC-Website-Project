@@ -1,6 +1,6 @@
 import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
-import ProjectsHeader from "./components/ProjectsHeader";
+import ProjectsHeader from "../../components/ProjectsHeader";
 import FindArtisanImage from "assets/images/find-artisans.svg";
 
 const ProjectDetailsPage = (): JSX.Element => {

@@ -21,6 +21,7 @@ const ProjectCard = (): JSX.Element => {
           href="https://artisan-fe-cal-tech.web.app"
           className="cursor-pointer ml-auto font-poppins font-semibold text-xl"
           target="_blank"
+          rel="noreferrer"
         >
           FindArtisan.com
         </a>

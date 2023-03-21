@@ -1,6 +1,6 @@
 import FindArtisanImage from "assets/images/find-artisans.svg";
-import ProjectCard from "./components/ProjectCard";
-import ProjectsHeader from "./components/ProjectsHeader";
+import ProjectCard from "../../components/ProjectCard";
+import ProjectsHeader from "../../components/ProjectsHeader";
 
 const ProjectsPage = (): JSX.Element => {
   return (
@@ -53,7 +53,7 @@ const ProjectsPage = (): JSX.Element => {
               alt="man"
             />
           </picture>
-          <metadata className="text-base font-bold mt-5">Project Team</metadata>
+          <div className="text-base font-bold mt-5">Project Team</div>
         </div>
       </section>
 
@@ -63,8 +63,8 @@ const ProjectsPage = (): JSX.Element => {
       </p>
 
       <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-32 gap-x-4 gap-y-20 px-16">
-        {[...Array(6)].map(() => {
-          return <ProjectCard />;
+        {[...Array(6)].map((item, index) => {
+          return <div key={index+1}><ProjectCard/></div>
         })}
       </section>
     </main>

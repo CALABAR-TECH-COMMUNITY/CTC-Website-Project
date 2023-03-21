@@ -1,20 +1,20 @@
 import HomePage from "pages/HomePage";
-import PageNotFound from "pages/PagenotFound";
+import PageNotFound from "pages/PageNotFound";
 import ProjectDetailsPage from "pages/projects/ProjectDetailsPage";
 import ProjectsPage from "pages/projects/ProjectsPage";
 import { Route, Routes } from "react-router-dom";
 
-import routes from "./routes";
+import AppRoutes from "./routes";
 import useEnhancedCustomRouterUtilities from "./useEnhancedCustomRouterUtilities";
 
 const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
   return (
     <Routes>
-      <Route path={routes.HOME_PAGE} element={<HomePage />} />
-      <Route path={routes.PROJECTS_PAGE} element={<ProjectsPage />} />
+      <Route path={AppRoutes.HOME_PAGE} element={<HomePage />} />
+      <Route path={AppRoutes.PROJECTS_PAGE} element={<ProjectsPage />} />
       <Route
-        path={routes.PROJECT_DETAILS_PAGE}
+        path={AppRoutes.PROJECT_DETAILS_PAGE}
         element={<ProjectDetailsPage />}
       />
 
