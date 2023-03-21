@@ -1,15 +1,12 @@
 import FindArtisanImage from "assets/images/find-artisans.svg";
 import ProjectCard from "./components/ProjectCard";
+import ProjectsHeader from "./components/ProjectsHeader";
 
 const ProjectsPage = (): JSX.Element => {
   return (
     <main className="font-comforta">
       {/* HEADER */}
-      <header className='h-40 bg-[url("assets/images/projects-header.svg")] bg-cover bg-center bg-no-repeat overflow-hidden flex items-center '>
-        <h1 className="text-appBlue100 text-2xl sm:text-3xl md:text-5xl font-bold ml-14 ">
-          Projects
-        </h1>
-      </header>
+      <ProjectsHeader />
 
       {/* HERO PROJECT */}
       <section className=" flex flex-col items-center md:grid grid-cols-2 responsive-padx-container mx-auto gap-5 lg:gap-10 mt-20">

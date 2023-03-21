@@ -1,3 +1,6 @@
+import routes from "navigation/routes";
+import { Link } from "react-router-dom";
+
 const demoLogo =
   "https://images.unsplash.com/photo-1567446537708-ac4aa75c9c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80";
 
@@ -56,12 +59,12 @@ const ProjectCard = (): JSX.Element => {
 
       {/* CARD VIEW DETAILS BUTTON  */}
       <div className="flex">
-        <button
+        <Link
+          to={routes.PROJECT_DETAILS_PAGE}
           className="px-4 py-2 text-appYellow200 border border-appYellow200 rounded-lg font-roboto font-medium text-sm ml-auto"
-          type="button"
         >
           View Details
-        </button>
+        </Link>
       </div>
     </div>
   );
