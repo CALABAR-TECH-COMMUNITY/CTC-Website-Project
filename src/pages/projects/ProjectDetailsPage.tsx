@@ -10,7 +10,7 @@ const ProjectDetailsPage = (): JSX.Element => {
       <ProjectsHeader />
 
       {/* PROJECT DESCRIPTION */}
-      <section className=" flex flex-col items-center md:grid grid-cols-2 responsive-padx-container mx-auto gap-5 lg:gap-10 mt-20">
+      <section className=" flex flex-col items-center md:grid grid-cols-2 place-items-center responsive-padx-container mx-auto gap-5 lg:gap-10 mt-20">
         <img className="max-h-80" src={FindArtisanImage} alt="find artisans" />
 
         <div>
