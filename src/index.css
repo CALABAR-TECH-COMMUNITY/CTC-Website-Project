@@ -1,7 +1,18 @@
+/*comforta font family*/
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
+/* Poppins font family */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Roboto font family */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* ROOT VARIABLES START */
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --primary: #edb866;
+  --white: #ffffff;
 
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -13,6 +24,7 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+/* ROOT VARIABLES END */
 
 /* a {
   font-weight: 500;
@@ -72,14 +84,7 @@ button:focus-visible {
 @tailwind components;
 @tailwind utilities;
 
-/* ROOT VARIABLES START */
-:root {
-  --primary: #edb866;
-  --white: #ffffff;
-}
-/* ROOT VARIABLES END */
-
-/* CUSTOM SCROLL BAR  start */
+/* CUSTOM SCROLL BAR  END */
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--white) var(--primary);
@@ -106,4 +111,11 @@ button:focus-visible {
   border-radius: 14px;
   border: 1.9px solid var(--white);
 }
-/* CUSTOM SCROLL BAR  end */
+/* CUSTOM SCROLL BAR  END */
+
+/* UTILITY CLASSES START */
+.responsive-padx-container {
+  @apply px-5 xs:px-9 xl:px-[3.75rem];
+}
+
+/* UTILITY CLASSES END */

@@ -11,7 +11,7 @@ const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path={routes.HOME_PAGE} element={<HomePage />} />
       <Route path={routes.PROJECTS_PAGE} element={<ProjectsPage />} />
       <Route
         path={routes.PROJECT_DETAILS_PAGE}
