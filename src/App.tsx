@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { BrowserRouter } from "react-router-dom";
+
+import AppRouter from "navigation/AppRouter";
+import "./App.css";
 
 function App() {
-
   return (
-    <div className="App text-red">
-      CTC Website
-      <p>Sorted</p>
-    </div>
-  )
+    <BrowserRouter>
+      <AppRouter />
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
