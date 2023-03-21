@@ -4,17 +4,17 @@ import ProjectDetailsPage from "pages/projects/ProjectDetailsPage";
 import ProjectsPage from "pages/projects/ProjectsPage";
 import { Route, Routes } from "react-router-dom";
 
-import AppRoutes from "./routes";
+import routes from "./routes";
 import useEnhancedCustomRouterUtilities from "./useEnhancedCustomRouterUtilities";
 
 const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
   return (
     <Routes>
-      <Route path={AppRoutes.HOME_PAGE} element={<HomePage />} />
-      <Route path={AppRoutes.PROJECTS_PAGE} element={<ProjectsPage />} />
+      <Route path={routes.HOME_PAGE} element={<HomePage />} />
+      <Route path={routes.PROJECTS_PAGE} element={<ProjectsPage />} />
       <Route
-        path={AppRoutes.PROJECT_DETAILS_PAGE}
+        path={routes.PROJECT_DETAILS_PAGE}
         element={<ProjectDetailsPage />}
       />
 
