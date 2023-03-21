@@ -1,3 +1,5 @@
+import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
+
 import ProjectsHeader from "./components/ProjectsHeader";
 import FindArtisanImage from "assets/images/find-artisans.svg";
 
@@ -56,6 +58,7 @@ const ProjectDetailsPage = (): JSX.Element => {
         Team Members
       </p>
 
+      {/* PROJEC GALLERY */}
       <section className="responsive-padx-container mb-32">
         <picture className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mx-auto  place-items-center gap-3 rounded-2xl  overflow-hidden ">
           <img
@@ -99,6 +102,23 @@ const ProjectDetailsPage = (): JSX.Element => {
             alt="man"
           />
         </picture>
+
+        <div className="flex">
+          <span className="flex ml-auto h-8 w-28 border border-appGray200 rounded-3xl overflow-hidden mt-20 mr-5 ">
+            <button
+              className="border-appGray200 border-r-[1px] flex-1 flex items-center justify-center"
+              type="button"
+            >
+              <BsChevronLeft />
+            </button>
+            <button
+              className="border-appGray200 bg-appYellow100 border-l-[1px] flex-1 flex items-center justify-center"
+              type="button"
+            >
+              <BsChevronRight />
+            </button>
+          </span>
+        </div>
       </section>
     </main>
   );
