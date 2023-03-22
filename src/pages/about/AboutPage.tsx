@@ -1,6 +1,6 @@
 import background from "assets/images/about-img3.jpg";
 import textbg from "assets/images/about-img1.png";
-import community from "assets/images/about-img2.png";
+// import community from "assets/images/about-img2.png";
 import "./About.css";
 
 
