@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 
 import routes from "./routes";
 import useEnhancedCustomRouterUtilities from "./useEnhancedCustomRouterUtilities";
+import LandingPage from "pages/landingPage/LandingPage";
 
 const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
@@ -13,6 +14,9 @@ const AppRouter = (): JSX.Element => {
     <Routes>
       <Route path={routes.HOME_PAGE} element={<HomePage />} />
       <Route path={routes.PROJECTS_PAGE} element={<ProjectsPage />} />
+
+
+      <Route path={routes.LANDING_PAGE} element={<LandingPage />} />
       <Route
         path={routes.PROJECT_DETAILS_PAGE}
         element={<ProjectDetailsPage />}

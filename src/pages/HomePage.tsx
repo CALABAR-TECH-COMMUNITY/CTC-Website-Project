@@ -1,5 +1,6 @@
 import routes from "navigation/routes";
 import { Link } from "react-router-dom";
+import LandingPage from './landingPage/LandingPage';
 
 const HomePage = (): JSX.Element => {
   return (
@@ -8,6 +9,10 @@ const HomePage = (): JSX.Element => {
 
       <Link to={routes.PROJECTS_PAGE} className="text-2xl font-semibold ">
         Click me to go to projects page
+      </Link>
+
+      <Link to={routes.LANDING_PAGE} className="text-2xl font-semibold ">
+        Click me to go to Landing Page
       </Link>
     </main>
   );
