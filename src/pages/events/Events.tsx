@@ -1,11 +1,14 @@
-import React from "react";
-import "./App.css";
+import "../../App.css";
 import Vector from "assets/images/Vector.png"
+import flyer1 from "assets/images/flyer1.png"
+import flyer2 from "assets/images/flyer2.png"
+import flyer3 from "assets/images/flyer3.png"
+import flyer4 from "assets/images/flyer4.png"
 
 function Events() {
   let gridDetails = [
     {
-      image: "flyer1.png",
+      image: flyer1,
       month: "FEB",
       date: "15",
       superscript: "th",
@@ -14,7 +17,7 @@ function Events() {
       location: "Calabar, Nigeria",
     },
     {
-      image: "flyer2.png",
+      image: flyer2,
       month: "FEB",
       date: "15",
       superscript: "th",
@@ -23,7 +26,7 @@ function Events() {
       location: "Calabar, Nigeria",
     },
     {
-      image: "flyer3.png",
+      image: flyer3,
       month: "FEB",
       date: "15",
       superscript: "th",
@@ -32,7 +35,7 @@ function Events() {
       location: "Calabar, Nigeria",
     },
     {
-      image: "flyer3.png",
+      image: flyer3,
       month: "FEB",
       date: "15",
       superscript: "th",
@@ -41,7 +44,7 @@ function Events() {
       location: "Calabar, Nigeria",
     },
     {
-      image: "flyer3.png",
+      image: flyer3,
       month: "FEB",
       date: "15",
       superscript: "th",
@@ -50,7 +53,7 @@ function Events() {
       location: "Calabar, Nigeria",
     },
     {
-      image: "flyer4.png",
+      image: flyer4,
       month: "FEB",
       date: "15",
       superscript: "th",
@@ -74,7 +77,7 @@ function Events() {
         {gridDetails.map((gd) => (
           <div className="my-8 w-fit cursor-pointer items-center justify-items-center rounded-2xl border  bg-transparent text-center text-white shadow-lg shadow-darkbtn transition duration-500 ease-in-out hover:scale-105">
             <img
-              src={`/${gd.image}`}
+              src={gd.image}
               className="w-full h-auto left-0 rounded-t-xl overflow-hidden"
               alt="flyer1"
             />
