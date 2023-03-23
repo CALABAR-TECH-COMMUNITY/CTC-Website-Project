@@ -16,10 +16,12 @@ module.exports = {
         'size-48': '48px',
         'size-72': '72px',
         'size-20': '20px',
+        'size-18': '18px',
       },
      
       lineHeight: {
         'lineh-54': '54px',
+        'lineh-23': '23.4px',
       },
       letterSpacing: {
         'custom1': '0.10000000149011612px',
