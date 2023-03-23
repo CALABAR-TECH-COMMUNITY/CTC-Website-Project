@@ -9,6 +9,9 @@ const HomePage = (): JSX.Element => {
       <Link to={routes.PROJECTS_PAGE} className="text-2xl font-semibold ">
         Click me to go to projects page
       </Link>
+      <Link to={routes.EVENTS_PAGE} className="text-2xl font-semibold ">
+        Click me to go to events page
+      </Link>
     </main>
   );
 };
