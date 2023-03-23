@@ -12,7 +12,7 @@ function Events() {
       month: "FEB",
       date: "15",
       superscript: "th",
-      title: "Navigating you way through tech",
+      title: "Navigating you way through tech (FREE)",
       desc: "Get to meet the professionals...",
       location: "Calabar, Nigeria",
     },
@@ -21,7 +21,7 @@ function Events() {
       month: "FEB",
       date: "15",
       superscript: "th",
-      title: "Navigating you way through tech",
+      title: "Navigating you way through tech (FREE)",
       desc: "Get to meet the professionals...",
       location: "Calabar, Nigeria",
     },
@@ -30,8 +30,8 @@ function Events() {
       month: "FEB",
       date: "15",
       superscript: "th",
-      title: "Navigating you way through tech",
-      desc: "Get to meet the professionals...",
+      title: "Pizza Hangout 3.0 (FREE)",
+      desc: "Get to meet the best tech community in Nigeria",
       location: "Calabar, Nigeria",
     },
     {
@@ -39,8 +39,8 @@ function Events() {
       month: "FEB",
       date: "15",
       superscript: "th",
-      title: "Navigating you way through tech",
-      desc: "Get to meet the professionals...",
+      title: "Pizza Hangout 3.0 (FREE)",
+      desc: "Get to meet the best tech community in Nigeria",
       location: "Calabar, Nigeria",
     },
     {
@@ -48,8 +48,8 @@ function Events() {
       month: "FEB",
       date: "15",
       superscript: "th",
-      title: "Navigating you way through tech",
-      desc: "Get to meet the professionals...",
+      title: "Pizza Hangout 3.0 (FREE)",
+      desc: "Get to meet the best tech community in Nigeria",
       location: "Calabar, Nigeria",
     },
     {
@@ -57,7 +57,7 @@ function Events() {
       month: "FEB",
       date: "15",
       superscript: "th",
-      title: "Navigating you way through tech",
+      title: "Navigating you way through tech (FREE)",
       desc: "Get to meet the professionals...",
       location: "Calabar, Nigeria",
     },
@@ -73,9 +73,9 @@ function Events() {
         Upcoming Events
       </div>
       {/* Grids */}
-      <div className="p-[100px] grid content-center grid-cols-1 items-center gap-2 overflow-hidden px-20 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+      <div className=" grid content-center grid-cols-1 text-center gap-2 overflow-hidden px-[100px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
         {gridDetails.map((gd) => (
-          <div className="my-8 w-fit cursor-pointer items-center justify-items-center rounded-2xl border  bg-transparent text-center text-white shadow-lg shadow-darkbtn transition duration-500 ease-in-out hover:scale-105">
+          <div className="my-8 w-fit cursor-pointer items-center justify-items-center rounded-2xl border bg-transparent text-center text-white shadow-lg shadow-darkbtn transition duration-500 ease-in-out hover:scale-105">
             <img
               src={gd.image}
               className="w-full h-auto left-0 rounded-t-xl overflow-hidden"
@@ -94,11 +94,11 @@ function Events() {
               <div className="border-r border-black w-2 mb-[5px]"></div>
               <div className="text-black px-[20px] w-auto">
                 <h2 className=""></h2>
-                <h3 className="font-custom font-weight-400 text-size-18 leading-lineh-23">
+                <h3 className="font-custom font-weight-400 w-64 break-words text-size-18 leading-lineh-23">
                   {gd.title}
                 </h3>
                 <p
-                  className="font-custom font-weight-300 p-[10px]"
+                  className="font-custom font-weight-300 p-[10px] w-60 break-words"
                   dangerouslySetInnerHTML={{ __html: gd.desc }}
                 ></p>
                 <br />
