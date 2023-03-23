@@ -1,13 +1,15 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import Events from './pages/events/Events'
 import './App.css'
 
 function App() {
-	return (
-	  <>
-	  </>
-	)
+
+  return (
+    <div className="App text-red">
+      CTC Website
+      <p>Sorted</p>
+    </div>
+  )
 }
 
-export default App
+export default App;
