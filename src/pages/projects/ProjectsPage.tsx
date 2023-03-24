@@ -58,13 +58,17 @@ const ProjectsPage = (): JSX.Element => {
       </section>
 
       {/* PAST PROJECTS */}
-      <p className="mt-32 text-appYellow100 font-bold text-2xl text-center mb-11">
+      <p className="mt-32 mb-24  text-appYellow100 font-bold text-3xl text-center ">
         Past Projects
       </p>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-32 gap-x-4 gap-y-20 px-16">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-32 gap-x-4 gap-y-20 responsive-padx-container">
         {[...Array(6)].map(() => {
-          return <div ><ProjectCard/></div>
+          return (
+            <div>
+              <ProjectCard />
+            </div>
+          );
         })}
       </section>
     </main>
