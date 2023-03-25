@@ -1,18 +1,8 @@
-/*comforta font family*/
-@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap");
-/* Poppins font family */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-/* Roboto font family */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-
-/* ROOT VARIABLES START */
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins&family=Reem+Kufi&display=swap');
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  --primary: #edb866;
-  --white: #ffffff;
 
   /* color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -24,7 +14,6 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-/* ROOT VARIABLES END */
 
 /* a {
   font-weight: 500;
@@ -79,43 +68,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* CUSTOM SCROLL BAR  END */
-* {
-  scrollbar-width: thin;
-  scrollbar-color: var(--white) var(--primary);
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--white);
-  border-radius: 10px;
-}
-
-/* Chrome, Edge, and Safari */
-*::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-}
-
-*::-webkit-scrollbar-track {
-  background: var(--white);
-  border-radius: 10px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--primary);
-  border-radius: 14px;
-  border: 1.9px solid var(--white);
-}
-/* CUSTOM SCROLL BAR  END */
-
-/* UTILITY CLASSES START */
-.responsive-padx-container {
-  @apply px-5 xs:px-9 xl:px-[3.75rem];
-}
-
-/* UTILITY CLASSES END */
