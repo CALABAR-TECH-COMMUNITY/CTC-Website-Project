@@ -14,7 +14,7 @@ interface Tab {
   const tabs: Tab[] = [
     { name: "Home", link: routes.HOME_PAGE, index: 0 },
     { name: "About Us", link: "", index: 1 },
-    { name: "Events", link: "", index: 2 },
+    { name: "Events", link: routes.EVENTS_PAGE, index: 2 },
     { name: "Projects", link: routes.PROJECTS_PAGE, index: 3 },
     { name: "Contact", link: "", index: 4 },
   ];
