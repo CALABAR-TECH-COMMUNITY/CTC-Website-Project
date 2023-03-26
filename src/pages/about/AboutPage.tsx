@@ -4,14 +4,15 @@ import vision from "assets/images/vision.png";
 import value from "assets/images/value.png";
 import mission from "assets/images/mission.png";
 import community from "assets/images/about-img2.png";
+import HomeLayout from "layout/HomeLayout";
 import "./About.css";
 
 
 export default function About(){
     return(
-        <>
-          <div className="hero" style={{backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', height: '300px' }}>
-            <div className="hero-text-bg" style={{backgroundImage: `url(${textbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '146px', height: '71px', opacity: '80%', position: 'absolute', top: '70px', left: '122px'   }}>
+        <HomeLayout>
+          <div className="hero" style={{backgroundImage: `url(${background})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', height: '300px' }}>
+            <div className="hero-text-bg" style={{backgroundImage: `url(${textbg})`, backgroundRepeat: 'no-repeat', backgroundSize: 'contain', width: '146px', height: '71px', opacity: '80%', position: 'absolute',  left: '122px'   }}>
               <h1>about us</h1>
             </div>
           </div>
@@ -56,6 +57,6 @@ export default function About(){
                </div>
             </div>
           </div>
-        </>
+        </HomeLayout>
     )
 }
