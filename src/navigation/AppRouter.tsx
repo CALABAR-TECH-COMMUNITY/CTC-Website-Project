@@ -1,4 +1,5 @@
 import HomePage from "pages/HomePage";
+import Events from "pages/events/Events";
 import PageNotFound from "pages/PageNotFound";
 import ProjectDetailsPage from "pages/projects/ProjectDetailsPage";
 import ProjectsPage from "pages/projects/ProjectsPage";
@@ -7,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 
 import routes from "./routes";
 import useEnhancedCustomRouterUtilities from "./useEnhancedCustomRouterUtilities";
+
 
 const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
@@ -19,7 +21,10 @@ const AppRouter = (): JSX.Element => {
         element={<ProjectDetailsPage />}
       />
       <Route path={routes.ABOUT_PAGE} element={<AboutPage />} />
-
+  <Route
+        path={routes.EVENTS_PAGE}
+        element={<Events />}
+      />
       {/* 404 PAGE: NOTE THIS MUST BE THE LAST ROUTE */}
       <Route path="*" element={<PageNotFound />} />
     </Routes>

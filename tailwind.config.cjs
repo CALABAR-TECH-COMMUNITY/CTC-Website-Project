@@ -7,10 +7,32 @@ module.exports = {
         comforta: ["Comfortaa"],
         poppins: ["Poppins"],
         roboto: ["Roboto"],
+        comfort: ["Comfortaa"],
+        custom: ["Poppins"],
+        reem: ["Reem Kufi"],
+        robot: ["Roboto"],
+      },
+      fontWeight: {
+        "weight-300": "300",
+        "weight-400": "400",
+        "weight-700": "700",
+      },
+      lineHeight: {
+        "lineh-54": "54px",
+        "lineh-23": "23.4px",
+      },
+      fontSize: {
+        "size-48": "48px",
+        "size-72": "72px",
+        "size-20": "20px",
+        "size-18": "18px",
       },
       boxShadow: {
         projectCardShadow: "0px 0px 6px rgba(0, 0, 0, 0.25)",
         projectShadowPill: " 0px 0px 2px rgba(0, 0, 0, 0.25);",
+      },
+      letterSpacing: {
+        custom1: "0.10000000149011612px",
       },
       screens: {
         xxs: "483px",
@@ -29,6 +51,7 @@ module.exports = {
       black: "#000",
       white: "#fff",
       red: "red",
+      darkbtn: "#DC8700",
     },
   },
   plugins: [],
