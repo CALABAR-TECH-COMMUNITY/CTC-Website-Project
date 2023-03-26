@@ -8,6 +8,7 @@ import { Route, Routes } from "react-router-dom";
 import routes from "./routes";
 import useEnhancedCustomRouterUtilities from "./useEnhancedCustomRouterUtilities";
 
+
 const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
   return (

@@ -1,9 +1,11 @@
 import FindArtisanImage from "assets/images/find-artisans.svg";
+import HomeLayout from "layout/HomeLayout";
 import ProjectCard from "../../components/ProjectCard";
 import ProjectsHeader from "../../components/ProjectsHeader";
 
 const ProjectsPage = (): JSX.Element => {
   return (
+    <HomeLayout>
     <main className="font-comforta">
       {/* HEADER */}
       <ProjectsHeader />
@@ -72,6 +74,7 @@ const ProjectsPage = (): JSX.Element => {
         })}
       </section>
     </main>
+    </HomeLayout>
   );
 };
 
