@@ -3,57 +3,56 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      colors: {
-        appBlue100: "#2E2E3E",
-        appGray100: "#54504E",
-        appGray200: "#22201F",
-        appGray300: "#63636333",
-        appGray400: "#D9D9D9",
-        appYellow100: "#DC8700",
-        appYellow200: "#EDB866",
-        transparent: "transparent",
-        black: "#000",
-        white: "#fff",
-        red: "red",
-        'darkbtn': '#DC8700'
-      },
-      fontWeight: {
-        'weight-300': '300',
-        'weight-400': '400',
-        'weight-700': '700',
-      },
       fontFamily: {
         comforta: ["Comfortaa"],
         poppins: ["Poppins"],
         roboto: ["Roboto"],
-        'comfort': ['Comfortaa'],
-        'custom': ['Poppins'],
-        'reem': ['Reem Kufi'],
-        'robot': ['Roboto']
+        comfort: ["Comfortaa"],
+        custom: ["Poppins"],
+        reem: ["Reem Kufi"],
+        robot: ["Roboto"],
+      },
+      fontWeight: {
+        "weight-300": "300",
+        "weight-400": "400",
+        "weight-700": "700",
       },
       lineHeight: {
-        'lineh-54': '54px',
-        'lineh-23': '23.4px',
+        "lineh-54": "54px",
+        "lineh-23": "23.4px",
       },
       fontSize: {
-        'size-48': '48px',
-        'size-72': '72px',
-        'size-20': '20px',
-        'size-18': '18px',
+        "size-48": "48px",
+        "size-72": "72px",
+        "size-20": "20px",
+        "size-18": "18px",
       },
       boxShadow: {
         projectCardShadow: "0px 0px 6px rgba(0, 0, 0, 0.25)",
         projectShadowPill: " 0px 0px 2px rgba(0, 0, 0, 0.25);",
       },
       letterSpacing: {
-        'custom1': '0.10000000149011612px',
+        custom1: "0.10000000149011612px",
       },
       screens: {
         xxs: "483px",
         xs: "576px",
       },
     },
-   
+    colors: {
+      appBlue100: "#2E2E3E",
+      appGray100: "#54504E",
+      appGray200: "#22201F",
+      appGray300: "#63636333",
+      appGray400: "#D9D9D9",
+      appYellow100: "#DC8700",
+      appYellow200: "#EDB866",
+      transparent: "transparent",
+      black: "#000",
+      white: "#fff",
+      red: "red",
+      darkbtn: "#DC8700",
+    },
   },
   plugins: [],
 };

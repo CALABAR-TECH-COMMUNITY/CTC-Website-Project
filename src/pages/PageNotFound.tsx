@@ -18,7 +18,7 @@ const PageNotFound = (): JSX.Element => {
   };
 
   return (
-    <main className="bg-white  min-h-screen flex flex-col items-center justify-center container">
+    <main className="bg-white  min-h-screen flex flex-col items-center justify-center ">
       <h1 className=" text-2xl md:text-3xl font-bold">Sorry page not found</h1>
       <Lottie
         className="w-[60%] md:w-[50%] lg:w-[40%]"
@@ -27,7 +27,11 @@ const PageNotFound = (): JSX.Element => {
       />
       <span className="text-lg md:text-xl font-semibold text-center">
         Let's get you back
-        <button className="ml-3" onClick={handleNavigation} type="button">
+        <button
+          className="ml-3 bg-appYellow100 rounded-lg px-3 py-2 text-white"
+          onClick={handleNavigation}
+          type="button"
+        >
           Home
         </button>
       </span>

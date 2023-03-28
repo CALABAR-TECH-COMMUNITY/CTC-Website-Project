@@ -4,10 +4,12 @@ import Event from "pages/events/Events";
 import PageNotFound from "pages/PageNotFound";
 import ProjectDetailsPage from "pages/projects/ProjectDetailsPage";
 import ProjectsPage from "pages/projects/ProjectsPage";
+import AboutPage from "pages/about/AboutPage";
 import { Route, Routes } from "react-router-dom";
 
 import routes from "./routes";
 import useEnhancedCustomRouterUtilities from "./useEnhancedCustomRouterUtilities";
+
 
 const AppRouter = (): JSX.Element => {
   useEnhancedCustomRouterUtilities();
@@ -19,6 +21,7 @@ const AppRouter = (): JSX.Element => {
         path={routes.PROJECT_DETAILS_PAGE}
         element={<ProjectDetailsPage />}
       />
+      <Route path={routes.ABOUT_PAGE} element={<AboutPage />} />
   <Route
         path={routes.EVENTS_PAGE}
         element={<Events />}

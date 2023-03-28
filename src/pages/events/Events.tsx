@@ -4,6 +4,7 @@ import flyer1 from "assets/images/flyer1.png"
 import flyer2 from "assets/images/flyer2.png"
 import flyer3 from "assets/images/flyer3.png"
 import flyer4 from "assets/images/flyer4.png"
+import HomeLayout from "layout/HomeLayout";
 
 function Events() {
   let gridDetails = [
@@ -64,6 +65,7 @@ function Events() {
   ];
   return (
     <>
+    <HomeLayout>
       <header className="h-32 md:h-36 lg:h-40 bg-[url(assets/images/header.svg)] bg-cover bg-center bg-no-repeat overflow-hidden flex items-center ">
         <h1 className="text-6xl font-extrabold text-left font-comfort sm:text-3xl md:text-5xl ml-11 md:ml-12 lg:ml-14 ">
           Events
@@ -130,6 +132,7 @@ function Events() {
         ))}
       </div>
       {/* End of Grids*/}
+      </HomeLayout>
     </>
   );
 }
