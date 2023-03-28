@@ -65,7 +65,7 @@ function Events() {
   return (
     <>
       <header className="h-32 md:h-36 lg:h-40 bg-[url(assets/images/header.svg)] bg-cover bg-center bg-no-repeat overflow-hidden flex items-center ">
-        <h1 className="text-6xl font-extrabold font-weight-700 text-left font-comfort sm:text-3xl md:text-5xl ml-11 md:ml-12 lg:ml-14 ">
+        <h1 className="text-6xl font-extrabold text-left font-comfort sm:text-3xl md:text-5xl ml-11 md:ml-12 lg:ml-14 ">
           Events
         </h1>
       </header>
@@ -73,16 +73,16 @@ function Events() {
         Upcoming Events
       </div>
       {/* Grids */}
-      <div className=" grid content-center grid-cols-1 text-center gap-2 overflow-hidden px-[100px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-        {gridDetails.map((gd) => (
-          <div className="my-8 w-fit cursor-pointer items-center justify-items-center rounded-2xl border bg-transparent text-center text-white shadow-lg shadow-darkbtn transition duration-500 ease-in-out hover:scale-105">
+      <div className=" grid content-center grid-cols-1 text-center gap-2 overflow-hidden px-[100px] sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        {gridDetails.map((gd, index) => (
+          <div key={index} className="my-8 h-[478px] w-[384px] mr-0 cursor-pointer items-center justify-items-center rounded-2xl border bg-white text-center shadow-lg shadow-darkbtn transition duration-500 ease-in-out hover:scale-105">
             <img
               src={gd.image}
               className="w-full h-auto left-0 rounded-t-xl overflow-hidden"
               alt="flyer1"
             />
             <br />
-            <div className="flex">
+            <div className="flex flex-wrap">
               <p className="text-darkbtn text-left text-3xl px-[20px] pt-0 mb-[20px]">
                 {gd.month}
                 <br />
@@ -99,8 +99,7 @@ function Events() {
                 </h3>
                 <p
                   className="font-custom font-weight-300 p-[10px] w-60 break-words"
-                  dangerouslySetInnerHTML={{ __html: gd.desc }}
-                ></p>
+                >{gd.desc}</p>
                 <br />
                 <div className="flex text-center">
                   <img

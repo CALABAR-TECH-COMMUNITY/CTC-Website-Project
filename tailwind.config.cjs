@@ -2,12 +2,26 @@
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    fontWeight: {
-      'weight-300': '300',
-      'weight-400': '400',
-      'weight-700': '700',
-    },
     extend: {
+      colors: {
+        appBlue100: "#2E2E3E",
+        appGray100: "#54504E",
+        appGray200: "#22201F",
+        appGray300: "#63636333",
+        appGray400: "#D9D9D9",
+        appYellow100: "#DC8700",
+        appYellow200: "#EDB866",
+        transparent: "transparent",
+        black: "#000",
+        white: "#fff",
+        red: "red",
+        'darkbtn': '#DC8700'
+      },
+      fontWeight: {
+        'weight-300': '300',
+        'weight-400': '400',
+        'weight-700': '700',
+      },
       fontFamily: {
         comforta: ["Comfortaa"],
         poppins: ["Poppins"],
@@ -39,20 +53,7 @@ module.exports = {
         xs: "576px",
       },
     },
-    colors: {
-      appBlue100: "#2E2E3E",
-      appGray100: "#54504E",
-      appGray200: "#22201F",
-      appGray300: "#63636333",
-      appGray400: "#D9D9D9",
-      appYellow100: "#DC8700",
-      appYellow200: "#EDB866",
-      transparent: "transparent",
-      black: "#000",
-      white: "#fff",
-      red: "red",
-      'darkbtn': '#DC8700'
-    },
+   
   },
   plugins: [],
 };
