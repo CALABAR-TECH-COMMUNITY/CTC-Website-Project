@@ -3,8 +3,7 @@ export default Object.freeze({
   PROJECTS_PAGE: "/projects",
   PROJECT_DETAILS_PAGE: "/project-details",
   ABOUT_PAGE: "/about",
-  EVENTS_PAGE: "/events",
-  EVENTS_PAGE_DUP: "/events/events"
+  EVENTS_PAGE: "/events"
 
 
   // EXTERNAL SOCIAL ROUTES
