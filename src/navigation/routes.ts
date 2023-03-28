@@ -5,5 +5,6 @@ export default Object.freeze({
   ABOUT_PAGE: "/about",
   EVENTS_PAGE: "/events"
 
+
   // EXTERNAL SOCIAL ROUTES
 });
