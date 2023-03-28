@@ -1,4 +1,4 @@
-.hero-text-bg h1{
+/* .hero-text-bg h1{
     font-family: 'Comfortaa';
     margin-left: 50px;
     width: 500px;
@@ -67,21 +67,6 @@ margin-bottom: 25px;
     letter-spacing: 0.1px;
     color: #160E00;
 }
-
-/* .about-comm-img{
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-} */
-
-/* .vid-player{
-    position: absolute;
-    width: 45px;
-    height: 45px;
-    left: 50%;
-    bottom: -35px;
-    transform: translate(-50%, -50%);
-} */
 
 .our-statement{
     margin-top: 5em;
@@ -155,15 +140,16 @@ color: #ffffff;
 }
 
 
-@media screen and (min-width: 1300px){
+@media screen and (min-width: 768px){
     .about-content{
         margin-left: 122px;
         margin-right: 122px;
     }
       
     .about-community{
-       display: grid;
-       grid-template-columns: 1fr 1fr ;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 50px;
     }
       
     .about-comm-text h2{   
@@ -171,13 +157,25 @@ color: #ffffff;
         font-size: 48px;
     }
 
-    /* .about-comm-text p{
-        width: 500px;
-    } */
+    .about-comm-text p{
+        width: 80%;
+    }
 
-    /* .about-comm-img{
-        width: 400px;
-    } */
+    .about-comm-img img{
+        margin-right: -40px;
+    }
+
+    span{
+        position: absolute;
+        bottom: 50px;
+        right: 110px;
+        width: 350px;
+        height: 284px;
+        z-index: -1;
+        background: linear-gradient(180deg, #DC8700 0%, #FDE0B2 100%);
+        opacity: 0.5;
+        border-radius: 16px;
+    }
 
     .our-statement{
         margin-top: 10em;
@@ -235,5 +233,172 @@ color: #ffffff;
          height: 255px;
          padding: 0 25px;
         }
+}  */
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Comfortaa';
 }
+
+.container{
+  padding: 2rem 5%;
+}
+
+#text h1{
+    font-size: 2.6rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    letter-spacing: 0.1px;
+    text-transform: capitalize;
+    color: #22201F;
+}
+
+.row{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+
+.content h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 500;
+   line-height: 137%;
+   letter-spacing: 0.4px;
+   color: #DC8700;
+}
+
+.content p{
+   font-style: normal;
+   font-weight: 400;
+   font-size: 0.9rem;
+   line-height: 160.5%;
+   letter-spacing: 0.4px;
+   color: #22201F;
+   margin-bottom: 20px;
+}
+
+.content a{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 0.9rem;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: #160E00;
+    text-transform: capitalize;
+    padding: 10px;
+    background: #EDB866;
+    border-radius: 8px;
+}
+
+#statement h2{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-style: normal;
+    font-weight: 700;
+   line-height: 54px;
+   letter-spacing: 0.1px;
+   color: #1d1d21;
+   text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.card{
+    padding: 20px 15px;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.card img{
+    width: 30px;
+    height: 30px;
+}
+
+.card h3{
+   width: 131px;
+   height: 36px;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 1rem;
+   line-height: 150%;
+   text-transform: uppercase;
+   color: #FFFFFF;
+   margin-top: 1em;
+}
+
+.card p{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+
+.vision{
+  background-color: #322B0E;  
+}
+
+.value{
+    background-color: #A96F16;
+}
+
+.mission{
+    background-color: #54504E;
+}
+
+
+@media screen and (min-width: 768px){
+    .container{
+        margin: auto;
+    }
     
+    .content h2{
+        font-size: 3rem;
+    }
+    
+    .row{
+      flex-direction: row;
+      padding: 2rem 0;
+    }
+
+    .row .img-contain{
+        flex: 1 1 40rem;
+        position: relative;
+    }
+
+    .row .img-contain img{
+        width: 80%;
+    }
+
+    .row .content{
+        flex: 1 1 40rem;
+    }
+
+    .row .content p{
+      font-size: 1rem;
+      padding: 1rem 0;
+    }
+
+    #statement h2{
+        font-size: 3rem;
+    }
+
+    .cards{
+        flex-direction: row;
+    }
+
+    .card{
+       width: 320px;
+    }
+}

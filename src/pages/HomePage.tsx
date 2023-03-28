@@ -13,6 +13,7 @@ const HomePage = (): JSX.Element => {
       </Link>
       <Link to={routes.ABOUT_PAGE} className="text-2xl font-semibold ">
         Click me to go to about page
+      </Link>  
       <Link to={routes.EVENTS_PAGE} className="text-2xl font-semibold ">
         Click me to go to events page
       </Link>
