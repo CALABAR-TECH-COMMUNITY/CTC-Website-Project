@@ -6,10 +6,10 @@ const demoLogo =
 
 const ProjectCard = (): JSX.Element => {
   return (
-    <div className="shadow-projectCardShadow rounded-2xl p-6 relative">
+    <div className="shadow-projectCardShadow rounded-2xl p-6 relative ">
       {/* CARD IMAGE */}
       <img
-        className="h-20 w-24 rounded-lg object-cover absolute -top-10"
+        className=" h-16 w-20  md:h-20 md:w-24 rounded-lg object-cover absolute -top-10"
         draggable={false}
         src={demoLogo}
         alt="Find artisan"
@@ -19,7 +19,7 @@ const ProjectCard = (): JSX.Element => {
       <div className="flex mb-7 mt-3">
         <a
           href="https://artisan-fe-cal-tech.web.app"
-          className="cursor-pointer ml-auto font-poppins font-semibold text-xl"
+          className="cursor-pointer ml-auto font-poppins font-semibold text-base md:text-xl"
           target="_blank"
           rel="noreferrer"
         >
@@ -28,7 +28,7 @@ const ProjectCard = (): JSX.Element => {
       </div>
 
       {/* CARD TECH STACKS */}
-      <span className="flex gap-2">
+      <span className="flex gap-2 flex-wrap">
         <data
           className="py-1 px-2 shadow-projectShadowPill border border-appGray400 rounded-full font-poppins text-sm text-appGray200"
           value="Nodejs"
@@ -62,7 +62,7 @@ const ProjectCard = (): JSX.Element => {
       <div className="flex">
         <Link
           to={routes.PROJECT_DETAILS_PAGE}
-          className="px-4 py-2 text-appYellow200 border border-appYellow200 rounded-lg font-roboto font-medium text-sm ml-auto"
+          className="px-4 py-2 text-appYellow200 border border-appYellow200 rounded-lg font-roboto font-medium text-sm ml-auto hover:bg-appYellow200 hover:text-white"
         >
           View Details
         </Link>

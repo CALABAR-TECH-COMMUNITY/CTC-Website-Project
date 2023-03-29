@@ -1,5 +1,5 @@
 import routes from "navigation/routes";
-import React, { ReactNode, useEffect, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   ILogo,
@@ -21,7 +21,7 @@ interface Tab {
 
 const tabs: Tab[] = [
   { name: "Home", link: routes.HOME_PAGE, index: 0 },
-  { name: "About Us", link: "", index: 1 },
+  { name: "About Us", link: routes.ABOUT_PAGE, index: 1 },
   { name: "Events", link: routes.EVENTS_PAGE, index: 2 },
   { name: "Projects", link: routes.PROJECTS_PAGE, index: 3 },
   { name: "Contact", link: "", index: 4 },
