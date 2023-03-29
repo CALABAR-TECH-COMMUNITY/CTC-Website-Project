@@ -1,7 +1,7 @@
 import routes from "navigation/routes";
 import { Link } from "react-router-dom";
 
-const ProjectCard = (): JSX.Element => {
+const JobsCard = (): JSX.Element => {
   return (
     <div className="shadow-projectCardShadow rounded-2xl p-6 relative">
        <div className='bg-white'>
@@ -12,7 +12,7 @@ const ProjectCard = (): JSX.Element => {
             <p>Type: Full Time</p>
           </div>
           <p className='font-semibold text-lg'>NGN400,000 - NGN 500,000</p>
-          <div className='flex justify-between pt-6'>
+          <div className='flex justify-between pt-6 flex-wrap-reverse gap-5 item-center'>
             <Link
               to={routes.JOBS_DETAILS_PAGE}
               className='bg-[#edb866] px-5 py-2 rounded-full font-medium text-sm'
@@ -26,4 +26,4 @@ const ProjectCard = (): JSX.Element => {
   );
 };
 
-export default ProjectCard;
+export default JobsCard;
