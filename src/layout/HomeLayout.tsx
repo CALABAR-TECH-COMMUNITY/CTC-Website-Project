@@ -151,7 +151,7 @@ const HomeLayout = ({ children }: LayoutProps) => {
                 <Link to={""}>Contact Us</Link>
               </li>
               <li>
-                <Link to={""}>Job Opportunities</Link>
+                <Link to={"/jobs"}>Job Opportunities</Link>
               </li>
               <li>
                 <Link to={""}>Request Mentor/Mentee</Link>

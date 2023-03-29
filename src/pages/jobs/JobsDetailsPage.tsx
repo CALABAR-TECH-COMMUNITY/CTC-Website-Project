@@ -1,13 +1,15 @@
+import HomeLayout from "layout/HomeLayout";
 import JobsHeader from "../../components/JobsHeader";
 
 const JobsDetailsPage = (): JSX.Element => {
   return (
-    <main className="font-comforta">
-      {/* HEADER */}
-      <JobsHeader />
-
-      
-    </main>
+    <HomeLayout>
+      <main className="font-comforta h-screen">
+        {/* HEADER */}
+        <JobsHeader />
+        Job Details
+      </main>
+    </HomeLayout>
   );
 };
 

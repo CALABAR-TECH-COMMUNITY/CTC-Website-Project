@@ -1,7 +1,9 @@
+import HomeLayout from "layout/HomeLayout";
 import JobsCard from "../../components/JobsCard";
 import JobsHeader from "../../components/JobsHeader";
 
 const JobsPage = (): JSX.Element => (
+  <HomeLayout>
   <main className="font-comforta">
     {/* HEADER */}
     <JobsHeader />
@@ -61,6 +63,7 @@ const JobsPage = (): JSX.Element => (
       })}
     </section>
   </main>
+  </HomeLayout>
 );
 
 export default JobsPage;
