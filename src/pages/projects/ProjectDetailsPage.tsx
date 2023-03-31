@@ -2,9 +2,11 @@ import { BsChevronRight, BsChevronLeft } from "react-icons/bs";
 
 import ProjectsHeader from "../../components/ProjectsHeader";
 import FindArtisanImage from "assets/images/find-artisans.svg";
+import HomeLayout from "layout/HomeLayout";
 
 const ProjectDetailsPage = (): JSX.Element => {
   return (
+    <HomeLayout>
     <main className="font-comforta">
       {/* HEADER */}
       <ProjectsHeader />
@@ -121,6 +123,7 @@ const ProjectDetailsPage = (): JSX.Element => {
         </div>
       </section>
     </main>
+    </HomeLayout>
   );
 };
 

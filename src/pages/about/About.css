@@ -146,6 +146,7 @@ body{
 }
 
 
+
 @media screen and (min-width: 768px){
     .cards::before{
         content: url(../../assets/images/circle1.png);
@@ -161,6 +162,19 @@ body{
         left: 4%;
         margin-top: -80px;
         z-index: -1;
+
+@media screen and (min-width: 1300px){
+    .about-content{
+        margin-left: 122px;
+        margin-right: 122px;
+        margin-bottom: 300px;
+    }
+      
+    .about-community{
+       display: grid;
+       grid-template-columns: 1fr 1fr ;
+       margin-top: 100px;
+       align-items: center;
     }
 
     .container{
