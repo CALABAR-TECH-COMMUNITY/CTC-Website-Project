@@ -1,5 +1,6 @@
 import HomeLayout from "layout/HomeLayout";
-
+import { Link } from "react-router-dom";
+import routes from "navigation/routes";
 
 const HomePage = (): JSX.Element => {
   return (
