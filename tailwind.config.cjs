@@ -29,8 +29,10 @@ module.exports = {
       },
       boxShadow: {
         projectCardShadow: "0px 0px 6px rgba(0, 0, 0, 0.25)",
-        projectShadowPill: " 0px 0px 2px rgba(0, 0, 0, 0.25)",
-        jobsCardShadow: " 0px 0px 4px rgba(0, 0, 0, 0.25)",
+        projectShadowPill: "0px 0px 2px rgba(0, 0, 0, 0.25)",
+        jobsCardShadow: "0px 0px 4px rgba(0, 0, 0, 0.25)",
+        sponsorsCardShadow:
+          "0px 1.52358px 23.6156px -3.80896px rgba(38, 40, 46, 0.25)",
       },
       letterSpacing: {
         custom1: "0.10000000149011612px",

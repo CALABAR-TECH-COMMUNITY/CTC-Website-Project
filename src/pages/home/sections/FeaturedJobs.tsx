@@ -22,7 +22,7 @@ const FeaturedJobs = (): JSX.Element => {
         </button>
       </p>
 
-      <ul className="grid  md:grid-cols-2 gap-y-12 gap-x-24  lg:gap-x-24">
+      <ul className="grid  md:grid-cols-2 gap-y-12 gap-x-12  lg:gap-x-24">
         {[...Array(4)].map((_, index) => {
           return <JobsCard key={index} />;
         })}
