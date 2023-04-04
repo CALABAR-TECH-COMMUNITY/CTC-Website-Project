@@ -2,6 +2,7 @@ import vision from "assets/images/vision.png";
 import value from "assets/images/value.png";
 import mission from "assets/images/mission.png";
 import community from "assets/images/about-img2.png";
+import text from "assets/images/about-img1.png";
 import play from "assets/images/play.png";
 import "./About.css";
 
@@ -11,7 +12,8 @@ export default function About(){
     <>
     <header className="header-bg">
       <div className="container">
-        <div id="text">
+        <div className="text">
+          <img src={text} alt="" />
           <h1>about us</h1>
         </div>
       </div>
@@ -28,7 +30,9 @@ export default function About(){
             <a href="#">request mentor/mentee</a>
           </div>
           <div className="img-content">
+            <div className="img-first">
             <img src={community} className="first-img" alt="" />
+            </div>
             <img src={play} className="second-img" alt="" />
           </div> 
         </div>

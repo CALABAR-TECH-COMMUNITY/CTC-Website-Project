@@ -9,7 +9,7 @@ body{
 .header-bg{
     display: flex;
     align-items: center;
-    min-height: 150px;
+    height: 30vh;
     background-image: url(../../assets/images/about-img3.jpg); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,13 +21,38 @@ body{
     padding: 2rem 5%;
 }
 
-#text h1{
+/* .text{
+    background-image: url(../../assets/images/about-img1.png); 
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0.5;
+} */
+
+.text img{
+    margin-left: -15px;
+    opacity: 0.9;
+    position: relative;
+    width: 100px;
+}
+
+.text h1{
     font-size: 2.6rem;
     text-transform: capitalize;
     font-weight: 700;
     letter-spacing: 0.1px;
     text-transform: capitalize;
     color: #22201F;
+    margin-top: -45px;
+    margin-left: 6px;
+}
+
+.text h1::before{
+    content: "";
+    position: absolute;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #2E2E3E, rgba(0, 0, 0, 0))100% 1;
+    margin-top: 53px;
+    width: 25px;
 }
 
 .row{
@@ -48,7 +73,6 @@ body{
     transform: translate(-50%, -50%);
     width: 40px;
 }
-
 
 .content h2{
     font-size: 2rem;
@@ -94,11 +118,21 @@ body{
    text-align: center;
 }
 
+#statement h2::before{
+    content: "";
+    position: absolute;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #1D1D21, #ffffff)1;
+    width: 25px;
+    margin-top: 48px;
+    margin-left: 3px;
+}
+
 .cards{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
 }
 
 .card{
@@ -145,39 +179,22 @@ body{
     background-color: #54504E;
 }
 
+@media screen and (min-width: 768px){    
+    .text h1{
+        font-size: 3rem;
+    }
 
-@media screen and (min-width: 768px){
-    .cards::before{
-        content: url(../../assets/images/circle1.png);
-        position: absolute;
-        left: -1%;
-        margin-top: -150px;
-        z-index: -1;
+    .text h1::before{
+        margin-top: 60px;
+    }
+
+    .text img{
+        margin-left: -40px;
+        opacity: 0.9;
+        position: relative;
+        width: 130px;
     }
     
-    .cards::after{
-        content: url(../../assets/images/circle2.png);
-        position: absolute;
-        left: 4%;
-        margin-top: -80px;
-        z-index: -1;
-    }
-}
-
-@media screen and (min-width: 1300px){
-    .about-content{
-        margin-left: 122px;
-        margin-right: 122px;
-        margin-bottom: 300px;
-    }
-      
-    .about-community{
-       display: grid;
-       grid-template-columns: 1fr 1fr ;
-       margin-top: 100px;
-       align-items: center;
-    }
-
     .container{
         margin: auto;
         width: 50%;
@@ -198,7 +215,19 @@ body{
     }
 
     .row .img-content .first-img{
-        width: 430px;
+        width: 460px;
+    }
+
+    .row .img-content .img-first::before{
+        content: "";
+        padding: 185px 220px;
+        position: relative;
+        top:210px;
+        margin-left: 35px;
+        z-index: -1;
+        background: linear-gradient(180deg, #DC8700 0%, #FDE0B2 100%);
+        opacity: 0.5;
+        border-radius: 16px
     }
 
     .row .content{
@@ -214,12 +243,33 @@ body{
         font-size: 3rem;
     }
 
+    #statement h2::before{
+        margin-top: 55px;
+        margin-left: 8px;
+    }
+
     .cards{
         flex-direction: row;
     }
 
     .card{
        width: 320px;
+    }
+
+    .cards::before{
+        content: url(../../assets/images/circle1.png);
+        position: absolute;
+        left: -1%;
+        margin-top: -150px;
+        z-index: -1;
+    }
+    
+    .cards::after{
+        content: url(../../assets/images/circle2.png);
+        position: absolute;
+        left: 4%;
+        margin-top: -80px;
+        z-index: -1;
     }
 }
 
@@ -232,6 +282,13 @@ body{
        font-size: 0.9rem;
     }
 
+    .row .img-content .img-first::before{
+        padding: 136px 160px;
+        position: absolute;
+        top:10px;
+        margin-left: 20px;
+    }
+
     .row .img-content .second-img{
         top: 38%;
         left: 53%;
@@ -239,6 +296,11 @@ body{
 }
 
 @media screen and (min-width: 1280px) {
+    .header-bg{
+        background-position: top;
+        height: 35vh;
+    }
+    
     .container{
         padding: 2rem 10%;
     }
@@ -248,6 +310,6 @@ body{
     }
 
     .card{
-        width: 300px;
+        width: 407px;
     }
 }
