@@ -180,6 +180,23 @@ body{
 }
 
 @media screen and (min-width: 768px){    
+    .text::before{
+        content: url(../../assets/images/circle1.png);
+        position: absolute;
+        left: -1.5%;
+        margin-top: -100px;
+        opacity: 0.3;
+        transform: scale(0.75);
+    }
+    
+    .text::after{
+        content: url(../../assets/images/circle2.png);
+        position: absolute;
+        left: 4%;
+        margin-top: -120px;
+        opacity: 0.3;
+    }
+    
     .text h1{
         font-size: 3rem;
     }
@@ -274,6 +291,21 @@ body{
 }
 
 @media (max-width: 1022px) and (min-width: 768px) {
+    .text::before{
+        left: -4%;
+        margin-top: -100px;
+        transform: scale(0.55);
+    }
+    
+    .text::after{
+        left: 3%;
+        transform: scale(0.7);
+    }
+
+    .text img{
+        margin-left: -30px;
+    }
+
     .content h2{
         font-size: 2rem;
     }
