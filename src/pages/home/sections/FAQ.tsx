@@ -14,7 +14,7 @@ const FAQ = (): JSX.Element => {
       </ul>
 
       <button
-        className="font-poppins font-medium py-3 text-sm px-5 rounded-lg bg-appYellow200 mt-12 mx-auto flex"
+        className="font-poppins font-medium py-3 text-sm px-5 rounded-lg bg-appYellow200 mt-12 mx-auto flex hover:scale-110 transition-all"
         type="button"
       >
         Send us a mail

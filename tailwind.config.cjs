@@ -33,6 +33,7 @@ module.exports = {
         jobsCardShadow: "0px 0px 4px rgba(0, 0, 0, 0.25)",
         sponsorsCardShadow:
           "0px 1.52358px 23.6156px -3.80896px rgba(38, 40, 46, 0.25)",
+        eventCardShadow: "0px 0px 16px rgba(84, 80, 78, 0.25)",
       },
       letterSpacing: {
         custom1: "0.10000000149011612px",
@@ -48,6 +49,11 @@ module.exports = {
       appGray200: "#22201F",
       appGray300: "#63636333",
       appGray400: "#D9D9D9",
+      appGray500: "#1d1d21",
+      appGray600: "#24211F",
+      appGray700: "#475064",
+      appGray800: "#636363",
+      appGray900: "#160E00",
       appYellow100: "#DC8700",
       appYellow200: "#EDB866",
       transparent: "transparent",

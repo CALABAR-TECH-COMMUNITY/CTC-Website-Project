@@ -6,7 +6,7 @@ const FeaturedJobs = (): JSX.Element => {
     <section className="pt-16 pb-14 responsive-padx-container relative">
       <img
         src={LandingIcon}
-        className="absolute right-0 -top-20 hidden sm:block h-40 w-40 md:w-44 md:h-44 object-contain lg:h-48 lg:w-48"
+        className="absolute right-0 -top-10 hidden sm:block h-40 w-40 md:w-44 md:h-44 object-contain lg:h-48 lg:w-48"
         alt="icon"
         draggable={false}
       />
@@ -22,7 +22,7 @@ const FeaturedJobs = (): JSX.Element => {
         </button>
       </p>
 
-      <ul className="grid  md:grid-cols-2 gap-y-12 gap-x-12  lg:gap-x-24">
+      <ul className="grid blurr-hidden md:grid-cols-2 gap-y-12 gap-x-12  lg:gap-x-24">
         {[...Array(4)].map((_, index) => {
           return <JobsCard key={index} />;
         })}

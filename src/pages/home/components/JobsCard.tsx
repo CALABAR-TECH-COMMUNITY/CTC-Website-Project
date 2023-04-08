@@ -1,6 +1,6 @@
 const JobsCard = (): JSX.Element => {
   return (
-    <li className="py-7 px-10 rounded-2xl bg-white shadow-jobsCardShadow text-sm text-appGray100 gap-y-1 flex flex-col font-bold hover:scale-105">
+    <li className="py-7 px-10 rounded-2xl bg-white shadow-jobsCardShadow text-sm text-appGray100 gap-y-1 flex flex-col font-bold transition-all hover:scale-105">
       <h5 className="text-appGray200 mb-1  text-base">
         Frontend Developer (React)
       </h5>
