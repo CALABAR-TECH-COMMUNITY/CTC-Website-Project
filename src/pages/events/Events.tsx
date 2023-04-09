@@ -123,11 +123,11 @@ function Events() {
             </p>
           </div>
           <br />
-          <div className="px-[50px] responsive-padx-container py-9 flex">
+          <div className=" gap-10 sm:gap-0 text-center sm:text-start responsive-padx-container mx-auto max-w-[66rem] py-9 flex flex-wrap sm:flex-nowrap">
             <br />
             <img
               src={flyer2}
-              className="w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]"
+              className="mx-auto w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]"
               alt="flyer 1"
             />
             <p className="pl-[20px] text-white font-extrabold font-poppins">
@@ -135,12 +135,11 @@ function Events() {
               <br />
               <h3 className="text-xl font-comforta">Introduction to tech</h3>
               <div className="flex flex-row flex-wrap font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
-                <p className="border rounded-full p-2">Career Talks</p>&nbsp;
+                <p className="border rounded-full p-2">Career Talks</p>
                 <p className="border rounded-full p-2">Product Manaegment</p>
                 &nbsp;<p className="border rounded-full p-2">Mobile App Dev.</p>
                 <p className="border rounded-full p-2">Software Engineering</p>
                 <br />
-                <p></p>
                 <br />
               </div>
               <p className="font-light flex-wrap">
