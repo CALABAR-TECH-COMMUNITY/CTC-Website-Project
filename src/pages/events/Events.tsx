@@ -2,6 +2,7 @@ import flyer1 from "assets/images/flyer1.png";
 import flyer2 from "assets/images/flyer2.png";
 import flyer3 from "assets/images/flyer3.png";
 import flyer4 from "assets/images/flyer4.png";
+import HomeLayout from "layout/HomeLayout";
 import EventCard from "./components/EventCard";
 
 function Events() {
@@ -62,7 +63,8 @@ function Events() {
     },
   ];
   return (
-    <main className="font-comforta">
+    <HomeLayout>
+    <main className="font-comfort">
       <header className="h-32 md:h-36 lg:h-40 bg-[url(assets/images/header.svg)] bg-cover bg-center bg-no-repeat overflow-hidden flex items-center ">
         <h1 className="text-6xl font-weight-700 text-left font-comfort sm:text-3xl md:text-5xl ml-11 md:ml-12 lg:ml-14 ">
           Events
@@ -74,9 +76,9 @@ function Events() {
       </h2>
 
       {/* Grids */}
-      <section className="grid grid-cols-1 pt-20 md:grid-cols-2 overflow-hidden lg:grid-cols-3 responsive-padx-container gap-10 place-content-center ml-11">
+      <section className="grid grid-cols-1 pt-20 pb-14 md:grid-cols-2 overflow-hidden lg:grid-cols-3 responsive-padx-container gap-10 place-content-center ml-11">
         {gridDetails.map((details, index) => {
-          return <EventCard key={index} {...details} />;
+          return <EventCard key={index+1} {...details} />;
         })}
         <br/>
         <br/>
@@ -126,6 +128,7 @@ function Events() {
       <br/>
       <br/>
     </main>
+    </HomeLayout>
   );
 }
 

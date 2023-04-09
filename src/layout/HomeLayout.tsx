@@ -151,7 +151,7 @@ const HomeLayout = ({ children }: LayoutProps) => {
                 <Link to={""}>Contact Us</Link>
               </li>
               <li>
-                <Link to={""}>Job Opportunities</Link>
+                <Link to={"/jobs"}>Job Opportunities</Link>
               </li>
               <li>
                 <Link to={""}>Request Mentor/Mentee</Link>
@@ -170,7 +170,7 @@ const HomeLayout = ({ children }: LayoutProps) => {
             </div>
           </div>
         </div>
-        <div className=" md:flex md:justify-around flex flex-col md:flex-row text-center md:text-start mt-14 mb-2 py-2 text-black  text-[var(--cc-grey-3)] ">
+        <div className=" md:flex md:justify-around flex flex-col md:flex-row text-center md:text-start mt-14 mb-2 py-2 text-[var(--cc-grey-3)] ">
           <span className="md:ml-[7%] md:w-[10%] mb-4 md:mb-0 md:mt-6 font-[500] text-[12px]">&copy; 2023 </span>
           <span className="md:w-[60%] w-[90%] xl:ml-[25%] lg:ml-[15%] md:ml-[5%] m-auto mb-4 md:mb-0 font-[500] text-[12px] md:text-[15px]">
             Calabar Tech Community · Terms of Use · Privacy Policy
