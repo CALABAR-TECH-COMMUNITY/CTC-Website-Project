@@ -5,6 +5,7 @@ import FAQ from "./sections/FAQ";
 import FeaturedJobs from "./sections/FeaturedJobs";
 import GalleryPhotos from "./sections/GalleryPhotos";
 import Hero from "./sections/Hero";
+import Journey from "./sections/Journey";
 import Sponsors from "./sections/Sponsors";
 import Stories from "./sections/Stories";
 import UpcomingEvents from "./sections/UpcomingEvents";
@@ -48,6 +49,7 @@ const HomePage = (): JSX.Element => {
     <main className="font-comforta relative overflow-x-hidden">
       <Hero />
       <UpcomingEvents />
+      <Journey />
       <GalleryPhotos />
       <Sponsors />
       <Stories />

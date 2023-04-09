@@ -1,4 +1,5 @@
 import Carousel, { ResponsiveType, CarouselProps } from "react-multi-carousel";
+import { useEffect } from "react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 // react-multi-carousel css files
 import "react-multi-carousel/lib/styles.css";
@@ -36,6 +37,23 @@ const options: CarouselProps = {
 
 const GalleryPhotos = (): JSX.Element => {
   const { isModalOpen, toggleModal } = useModalStore();
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("photo-show");
+        }
+      });
+    });
+
+    const hiddenElements = document.querySelectorAll(".photo-hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
+
+    // Cleanup function to disconnect observer when component unmounts
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <>
       <section className="responsive-padx-container  bg-appGray500 relative  ">
@@ -67,7 +85,7 @@ const GalleryPhotos = (): JSX.Element => {
             <img
               onClick={toggleModal}
               draggable={false}
-              className="object-contain rounded-2xl "
+              className="object-contain rounded-2xl   photo-list photo-hidden"
               src={GalleryImage1}
               alt="Gallery"
             />
@@ -78,7 +96,7 @@ const GalleryPhotos = (): JSX.Element => {
                   <img
                     key={index}
                     draggable={false}
-                    className="object-contain rounded-2xl"
+                    className="object-contain rounded-2xl photo-list photo-hidden"
                     src={src}
                     alt={`Gallery + ${index}`}
                   />

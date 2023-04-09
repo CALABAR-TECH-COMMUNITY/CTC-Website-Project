@@ -123,6 +123,7 @@ button:focus-visible {
 ::selection {
   background: var(--primary);
 }
+
 /* HIGHLIGHTS START */
 
 /* UTILITY CLASSES START */
@@ -145,10 +146,22 @@ button:focus-visible {
   filter: blur(0);
   transform: translate(0);
 }
+.photo-hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.photo-show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate(0);
+}
 .blurr-hidden {
   opacity: 0;
   filter: blur(5px);
-  transition: all 1.5s;
+  transition: all 2s;
 }
 
 .blurr-show {
@@ -173,5 +186,12 @@ button:focus-visible {
   .faq-list:nth-child(#{$i}) {
     transition-delay: ($i - 2) * 100ms;
   }
+  .photo-list:nth-child(#{$i}) {
+    transition-delay: ($i - 2) * 100ms;
+  }
 }
 // landing page animation end
+
+.hovered-parent:hover .hovered-nav {
+  @apply bg-appYellow100 border-appYellow100;
+}

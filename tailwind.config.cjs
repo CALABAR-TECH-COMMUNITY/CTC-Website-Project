@@ -46,6 +46,7 @@ module.exports = {
     colors: {
       appBlue100: "#2E2E3E",
       appGray100: "#54504E",
+      appGray110: "#817e78",
       appGray200: "#22201F",
       appGray300: "#63636333",
       appGray400: "#D9D9D9",
