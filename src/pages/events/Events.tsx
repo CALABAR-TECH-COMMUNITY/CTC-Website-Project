@@ -90,7 +90,7 @@ function Events() {
       <br/>
       <br/>
       <section className="w-full bg-[#1D1D21] p-0 overflow-hidden relative">
-        <p className="font-extrabold text-white text-center font-comforta text-size-48">Past Events</p>
+        <p className="font-extrabold text-white text-center font-comforta text-size-48 pt-1">Past Events</p>
         <div className="px-[50px] py-9 lg:px-[500px] md:px-[20px] flex">
         <br/>
         <img src={flyer1} className="w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]" alt="flyer 1"/>
