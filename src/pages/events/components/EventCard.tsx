@@ -12,7 +12,7 @@ interface Props {
 
 const EventCard = (props: Props): JSX.Element => {
   return (
-    <div className="bg-white shadow-eventCardShadow h-[550px] w-[384px] overflow-hidden shadow-lg shadow-darkbtn rounded-xl transform hover:scale-105 transition duration-700 ease-in-out">
+    <div className="bg-white shadow-eventCardShadow h-[550px] w-[350px] overflow-hidden shadow-lg shadow-darkbtn rounded-xl transform hover:scale-105 transition duration-700 ease-in-out">
       <img
         draggable={false}
         className="h-[246px] w-full object-cover rounded-t-lg"

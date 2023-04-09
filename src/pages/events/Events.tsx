@@ -86,30 +86,42 @@ function Events() {
       <br/>
       <br/>
       <br/>
-      <section className="w-full bg-[#1D1D21] p-[100px]">
+      <section className="w-full bg-[#1D1D21] p-[10px] overflow-hidden">
         <p className="font-extrabold text-white text-center font-comforta text-size-48">Past Events</p>
-        <div className="px-[500px] pt-[200px] flex">
+        <div className="px-[50px] flex">
         <br/>
-        <img src={flyer1} className="w-[200px] h-[150px] rounded-xl border-[5px] border-darkbtn" alt="flyer 1"/>
+        <img src={flyer1} className="w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]" alt="flyer 1"/>
         <p className="pl-[20px] text-white font-extrabold font-poppins">Feb 23, 2023 - Virtual (Google meet)<br/>
         <h3 className="text-xl font-comforta">Introduction to tech</h3>
-        <div className="flex justify-evenly font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
+        <div className="flex flex-row flex-wrap font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
         <p className="border rounded-full p-2">Career Talks</p>&nbsp;<p className="border rounded-full p-2">Product Manaegment</p>&nbsp;<p className="border rounded-full p-2">Mobile App Dev.</p><p className="border rounded-full p-2">Software Engineering</p><br/><p></p><br/>
         </div>
-        <p className="font-light">Lorem ipsum dolor sit amet consectetur. Felis eu feugiat tincidunt lacus vitae sit. Mollis adipiscing orci ut donec porttitor nulla cursus at. Venenatis cras ullamcorper adipiscing risus leo lobortis non. In purus laoreet at imperdiet tempus auctor magna. Turpis mi purus vivamus diam tortor mi lacinia integer at. Massa tincidunt sit cum mattis habitasse duis risus.</p>
+        <p className="font-light flex-wrap">Lorem ipsum dolor sit amet consectetur. Felis eu feugiat tincidunt lacus vitae sit. Mollis adipiscing orci ut donec porttitor nulla cursus at. Venenatis cras ullamcorper adipiscing risus leo lobortis non. In purus laoreet at imperdiet tempus auctor magna. Turpis mi purus vivamus diam tortor mi lacinia integer at. Massa tincidunt sit cum mattis habitasse duis risus.</p>
         </p>
       </div>
-      <div className="px-[500px] pt-[200px] flex">
+      <br/>
+      <div className="px-[50px] flex">
+        <br/>
+        <img src={flyer2} className="w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]" alt="flyer 1"/>
+        <p className="pl-[20px] text-white font-extrabold font-poppins">Feb 23, 2023 - Virtual (Google meet)<br/>
+        <h3 className="text-xl font-comforta">Introduction to tech</h3>
+        <div className="flex flex-row flex-wrap font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
+        <p className="border rounded-full p-2">Career Talks</p>&nbsp;<p className="border rounded-full p-2">Product Manaegment</p>&nbsp;<p className="border rounded-full p-2">Mobile App Dev.</p><p className="border rounded-full p-2">Software Engineering</p><br/><p></p><br/>
+        </div>
+        <p className="font-light flex-wrap">Lorem ipsum dolor sit amet consectetur. Felis eu feugiat tincidunt lacus vitae sit. Mollis adipiscing orci ut donec porttitor nulla cursus at. Venenatis cras ullamcorper adipiscing risus leo lobortis non. In purus laoreet at imperdiet tempus auctor magna. Turpis mi purus vivamus diam tortor mi lacinia integer at. Massa tincidunt sit cum mattis habitasse duis risus.</p>
+        </p>
+      </div>
+      {/* <div className="px-[500px] pt-[200px] flex">
         <br/>
         <img src={flyer2} className="w-[200px] h-[150px] rounded-xl border-[5px] border-darkbtn" alt="flyer 1"/>
         <p className="pl-[20px] text-white font-extrabold font-poppins">Feb 23, 2023 - Virtual (Google meet)<br/>
         <h3 className="text-xl font-comforta">Introduction to tech</h3>
-        <div className="flex justify-evenly font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
-        <p className="border rounded-full p-2">Career Talks</p>&nbsp;<p className="border rounded-full p-2">Product Manaegment</p>&nbsp;<p className="border rounded-full p-2">Mobile App Dev.</p><p className="border rounded-full p-2">Software Engineering</p><br/><p></p><br/>
+        <div className="flex flex-row justify-items-center font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
+        <p className="border rounded-full p-2">Career Talks</p><p className="border rounded-full p-2">Product Manaegment</p><p className="border rounded-full p-2">Mobile App Dev.</p><p className="border rounded-full p-2">Software Engineering</p><br/><p></p><br/>
         </div>
         <p className="font-light">Lorem ipsum dolor sit amet consectetur. Felis eu feugiat tincidunt lacus vitae sit. Mollis adipiscing orci ut donec porttitor nulla cursus at. Venenatis cras ullamcorper adipiscing risus leo lobortis non. In purus laoreet at imperdiet tempus auctor magna. Turpis mi purus vivamus diam tortor mi lacinia integer at. Massa tincidunt sit cum mattis habitasse duis risus.</p>
         </p>
-      </div>
+      </div> */}
       </section>
       <br/>
       <br/>
