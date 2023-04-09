@@ -91,7 +91,7 @@ function Events() {
       <br/>
       <section className="w-full bg-[#1D1D21] p-0 overflow-hidden relative">
         <p className="font-extrabold text-white text-center font-comforta text-size-48 pt-1">Past Events</p>
-        <div className="px-[50px] py-9 lg:px-[500px] md:px-[20px] flex">
+        <div className="px-[50px] py-9 lg:px-[200px] md:px-[20px] flex">
         <br/>
         <img src={flyer1} className="w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]" alt="flyer 1"/>
         <p className="pl-[20px] text-white font-extrabold font-poppins">Feb 23, 2023 - Virtual (Google meet)<br/>
@@ -103,7 +103,7 @@ function Events() {
         </p>
       </div>
       <br/>
-      <div className="px-[50px] lg:px-[500px] py-9 flex">
+      <div className="px-[50px] lg:px-[200px] py-9 flex">
         <br/>
         <img src={flyer2} className="w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]" alt="flyer 1"/>
         <p className="pl-[20px] text-white font-extrabold font-poppins">Feb 23, 2023 - Virtual (Google meet)<br/>
