@@ -1,4 +1,4 @@
-import HomePage from "pages/HomePage";
+import HomePage from "pages/home/HomePage";
 import Events from "pages/events/Events";
 import PageNotFound from "pages/PageNotFound";
 import ProjectDetailsPage from "pages/projects/ProjectDetailsPage";
