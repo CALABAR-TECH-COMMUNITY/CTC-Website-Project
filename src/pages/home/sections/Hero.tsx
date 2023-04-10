@@ -2,14 +2,12 @@ import { Link } from "react-router-dom";
 import { FiSearch } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 
-import HeroImage1 from "assets/images/landingPage/hero1.svg";
-import HeroImage2 from "assets/images/landingPage/hero2.svg";
-import HeroImage3 from "assets/images/landingPage/hero3.svg";
+import HeroImage from "assets/images/landingPage/hero.svg";
 import AppLogo from "assets/images/Logo.svg";
 
 const Hero = (): JSX.Element => {
   return (
-    <section className="bg-[url('assets/images/landingPage/hero.svg')] font-comforta  min-h-screen ">
+    <section className="bg-[url('assets/images/landingPage/hero-bg.svg')] font-comforta  min-h-screen ">
       <header className="h-20 w-full  text-white flex justify-between items-center font-reem responsive-padx-container">
         <img className="h-12" src={AppLogo} alt="Logo" />
         <nav className=" gap-5 hidden sm:flex">
@@ -37,7 +35,7 @@ const Hero = (): JSX.Element => {
 
       <hr className="border-appGray110" />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-[85vh] responsive-padx-container  ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 h-[85vh] responsive-padx-container  place-items-center ">
         <div className="flex justify-center flex-col">
           <h1 className="text-white text-center md:text-start text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
             Welcome to Calabar Tech Community
@@ -67,26 +65,12 @@ const Hero = (): JSX.Element => {
           </div>
         </div>
 
-        <figure className="relative hidden md:block">
-          <img
-            className="absolute left-[5vw] top-5 w-64 h-auto object-center"
-            src={HeroImage1}
-            draggable={false}
-            alt="hero-1"
-          />
-          <img
-            className="right-[2vw] top-5 absolute w-64 h-auto object-center"
-            src={HeroImage2}
-            draggable={false}
-            alt="hero-2"
-          />
-          <img
-            className="absolute left-[10vw] bottom-0 w-64 h-auto object-center"
-            src={HeroImage3}
-            draggable={false}
-            alt="hero-3"
-          />
-        </figure>
+        <img
+          className="hidden md:block w-[27rem]"
+          src={HeroImage}
+          draggable={false}
+          alt="hero"
+        />
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import Carousel, { ResponsiveType, CarouselProps } from "react-multi-carousel";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { IoCloseCircleOutline } from "react-icons/io5";
 // react-multi-carousel css files
 import "react-multi-carousel/lib/styles.css";
@@ -11,8 +11,6 @@ import GalleryImage4 from "assets/images/landingPage/gallery-4.svg";
 import EllipseIcon from "assets/images/landingPage/ellipse.svg";
 import Ellipse1Icon from "assets/images/landingPage/ellipse-1.svg";
 import Ellipse2Icon from "assets/images/landingPage/ellipse-2.svg";
-
-import { useModalStore } from "store/modalStore";
 
 const images = [GalleryImage2, GalleryImage3, GalleryImage2, GalleryImage4];
 
@@ -36,7 +34,7 @@ const options: CarouselProps = {
 };
 
 const GalleryPhotos = (): JSX.Element => {
-  const { isModalOpen, toggleModal } = useModalStore();
+  const [isModalOpen, setModalVisibility] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -54,6 +52,9 @@ const GalleryPhotos = (): JSX.Element => {
     return () => observer.disconnect();
   }, []);
 
+  const toggleModal = () => {
+    setModalVisibility(!isModalOpen);
+  };
   return (
     <>
       <section className="responsive-padx-container  bg-appGray500 relative  ">

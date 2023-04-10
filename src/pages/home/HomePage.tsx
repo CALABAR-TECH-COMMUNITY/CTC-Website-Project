@@ -1,6 +1,6 @@
+import HomeLayout from "layout/HomeLayout";
 import { useEffect } from "react";
 
-import { useModalStore } from "store/modalStore";
 import FAQ from "./sections/FAQ";
 import FeaturedJobs from "./sections/FeaturedJobs";
 import GalleryPhotos from "./sections/GalleryPhotos";
@@ -11,8 +11,6 @@ import Stories from "./sections/Stories";
 import UpcomingEvents from "./sections/UpcomingEvents";
 
 const HomePage = (): JSX.Element => {
-  const { isModalOpen } = useModalStore();
-
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -46,16 +44,18 @@ const HomePage = (): JSX.Element => {
   }, []);
 
   return (
-    <main className="font-comforta relative overflow-x-hidden">
-      <Hero />
-      <UpcomingEvents />
-      <Journey />
-      <GalleryPhotos />
-      <Sponsors />
-      <Stories />
-      <FeaturedJobs />
-      <FAQ />
-    </main>
+    <HomeLayout hideNav>
+      <main className="font-comforta relative overflow-x-hidden">
+        <Hero />
+        <UpcomingEvents />
+        <Journey />
+        <GalleryPhotos />
+        <Sponsors />
+        <Stories />
+        <FeaturedJobs />
+        <FAQ />
+      </main>
+    </HomeLayout>
   );
 };
 
