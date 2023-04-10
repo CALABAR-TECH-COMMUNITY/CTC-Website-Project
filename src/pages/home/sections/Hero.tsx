@@ -1,37 +1,10 @@
-import { Link } from "react-router-dom";
-import { FiSearch } from "react-icons/fi";
-import { GiHamburgerMenu } from "react-icons/gi";
-
 import HeroImage from "assets/images/landingPage/hero.svg";
-import AppLogo from "assets/images/Logo.svg";
+import Header from "./HomeHeader";
 
 const Hero = (): JSX.Element => {
   return (
     <section className="bg-[url('assets/images/landingPage/hero-bg.svg')] font-comforta  min-h-screen ">
-      <header className="h-20 w-full  text-white flex justify-between items-center font-reem responsive-padx-container">
-        <img className="h-12" src={AppLogo} alt="Logo" />
-        <nav className=" gap-5 hidden sm:flex">
-          <Link className="hover:text-appYellow100 hovered-parent " to={""}>
-            Home
-            <hr className="h-1 w-5 rounded-3xl bg-white  hovered-nav mx-auto" />
-          </Link>
-          <Link className="hover:text-appYellow100" to={""}>
-            About Us
-          </Link>
-          <Link className="hover:text-appYellow100" to={""}>
-            Events
-          </Link>
-          <Link className="hover:text-appYellow100" to={""}>
-            Projects
-          </Link>
-          <Link className="hover:text-appYellow100" to={""}>
-            Contacts
-          </Link>
-        </nav>
-
-        <FiSearch className="hidden sm:block" />
-        <GiHamburgerMenu className="sm:hidden" />
-      </header>
+      <Header />
 
       <hr className="border-appGray110" />
 

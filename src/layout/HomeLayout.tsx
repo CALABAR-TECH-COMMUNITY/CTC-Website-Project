@@ -19,7 +19,7 @@ interface Tab {
   index: number;
 }
 
-const tabs: Tab[] = [
+export const tabs: Tab[] = [
   { name: "Home", link: routes.HOME_PAGE, index: 0 },
   { name: "About Us", link: routes.ABOUT_PAGE, index: 1 },
   { name: "Events", link: routes.EVENTS_PAGE, index: 2 },
