@@ -1,5 +1,6 @@
 import HomePage from "pages/HomePage";
 import Events from "pages/events/Events";
+import ViewEventDetails from "pages/events/components/ViewEventDetails";
 import PageNotFound from "pages/PageNotFound";
 import ProjectDetailsPage from "pages/projects/ProjectDetailsPage";
 import ProjectsPage from "pages/projects/ProjectsPage";
@@ -25,6 +26,7 @@ const AppRouter = (): JSX.Element => {
       <Route path={routes.JOBS_DETAILS_PAGE} element={<JobsDetailsPage />} />
       <Route path={routes.ABOUT_PAGE} element={<AboutPage />} />
       <Route path={routes.EVENTS_PAGE} element={<Events />} />
+      <Route path={routes.VIEW_EVENT_DETAILS_PAGE} element={<ViewEventDetails/>} />
       {/* 404 PAGE: NOTE THIS MUST BE THE LAST ROUTE */}
       <Route path="*" element={<PageNotFound />} />
     </Routes>

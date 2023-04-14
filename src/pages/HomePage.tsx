@@ -17,6 +17,9 @@ const HomePage = (): JSX.Element => {
       <Link to={routes.EVENTS_PAGE} className="text-2xl font-semibold ">
         Click me to go to events page
       </Link>
+      <Link to={routes.VIEW_EVENT_DETAILS_PAGE} className="text-2xl font-semibold ">
+        Click me to go to view event details page
+      </Link>
       
     </main>
     </HomeLayout>
