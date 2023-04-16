@@ -17,7 +17,7 @@ const UpcomingEvents = (): JSX.Element => {
       <div className="flex">
         <Link
           className="mx-auto mt-16 bg-appYellow200 px-6 text-base py-3 rounded-md font-poppins font-medium text-appGray900 hover:scale-110 transition-all"
-          to=""
+          to="/events"
         >
           More
         </Link>

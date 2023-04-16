@@ -19,22 +19,28 @@ const Hero = (): JSX.Element => {
             people, connect, share ideas, get mentorship and stay techie..
           </p>
 
-          <button
-            type="button"
-            className="px-6 py-3 w-max bg-appYellow200 hover:scale-110 transition-all font-poppins font-medium rounded-lg"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Join Community
-          </button>
+            <button
+              type="button"
+              className="px-6 py-3 w-max bg-appYellow200 hover:scale-110 transition-all font-poppins font-medium rounded-lg"
+            >
+              Join Community
+            </button>
+          </a>
 
           <div className="flex items-center gap-16 mt-10">
             <dl>
-              <dd className="font-bold text-3xl text-white">20k+</dd>
+              <dd className="font-bold text-3xl text-white">400+</dd>
               <dt className="text-lg font-light text-white">Members</dt>
             </dl>
-            <dl>
+            {/* <dl>
               <dd className="font-bold text-3xl text-white">7k+</dd>
               <dt className="text-lg font-light text-white">Online</dt>
-            </dl>
+            </dl> */}
           </div>
         </div>
 

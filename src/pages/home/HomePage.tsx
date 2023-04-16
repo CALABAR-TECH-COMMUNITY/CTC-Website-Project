@@ -50,9 +50,9 @@ const HomePage = (): JSX.Element => {
         <UpcomingEvents />
         <Journey />
         <GalleryPhotos />
-        <Sponsors />
+        {/* <Sponsors /> */}
         <Stories />
-        <FeaturedJobs />
+        {/* <FeaturedJobs /> */}
         <FAQ />
       </main>
     </HomeLayout>

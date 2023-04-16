@@ -1,12 +1,9 @@
-const FAQCard = (): JSX.Element => {
+const FAQCard = ({ faq }:any): JSX.Element => {
   return (
     <li className="text-appGray200 faq-list home-hidden">
-      <h6 className="font-bold text-base mb-3"> Who can become a member? </h6>
+      <h6 className="font-bold text-base mb-3 b">{faq.question} </h6>
 
-      <p className="text-sm  font-normal">
-        The clubs is open to any student, ranging from novice developers who are
-        just starting, to advanced developers who want to further their skills.
-      </p>
+      <p className="text-sm  font-normal">{faq.answer}</p>
     </li>
   );
 };

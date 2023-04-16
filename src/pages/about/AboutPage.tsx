@@ -40,16 +40,24 @@ export default function About() {
         <div className="about-community">
           <div className="about-comm-text">
             <h2>our community</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur. Integer lectus cras et
-              habitasse tellus dictum sit leo varius. Lectus massa est sed
-              lectus bibendum tortor pellennb
-              <br />
-              Egestas imperdiet vivamus metus massa suspendisse eget ultrices
-              ipsum. Egestas imperdiet vivamus metus massa suspendisse eget
-              ultrices ipsum.
+            <p className="mt-8">
+              We're community of techies that connect, share resources, and
+              build their tech skills. We do this through engagement on our
+              platform.
             </p>
-            <a href="#">request mentor/mentee</a>
+            <p>
+              Whether you're just starting out or you're looking to upgrade your
+              skills, we have something for you here at Calabar Tech Community!
+            </p>
+            <p>
+              We know that when it comes to learning new things and growing your
+              skills, there's nothing better than being surrounded by other
+              people who are trying to do the same thing—and we believe that's
+              what makes our community so special.
+            </p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform">
+              Join us now
+            </a>
           </div>
           <div className="about-comm-img">
             <img src={community} alt="" />
