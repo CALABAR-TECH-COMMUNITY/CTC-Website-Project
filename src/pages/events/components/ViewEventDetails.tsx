@@ -5,10 +5,11 @@ import location from "../../../assets/images/location.png"
 import speaker from "../../../assets/images/viewdetails-img.jpg"
 import {BsTwitter, BsSlack} from "react-icons/bs"
 import {IoLogoWhatsapp} from "react-icons/io"
+import HomeLayout from "layout/HomeLayout";
 
 export default function ViewEventDetails(){
     return(
-        <>
+        <HomeLayout>
          <div className="header">
             <div className="container">
                 <div className="header-text">
@@ -64,6 +65,6 @@ export default function ViewEventDetails(){
                 <textarea placeholder="Questions for the session"></textarea>
             </div>
          </div>
-        </>
+        </HomeLayout>
     )
 }
