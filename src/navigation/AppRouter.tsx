@@ -1,4 +1,4 @@
-import HomePage from "pages/HomePage";
+import HomePage from "pages/home/HomePage";
 import Events from "pages/events/Events";
 import ViewEventDetails from "pages/events/components/ViewEventDetails";
 import PageNotFound from "pages/PageNotFound";
