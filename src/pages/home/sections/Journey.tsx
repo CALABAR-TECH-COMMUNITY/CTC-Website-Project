@@ -15,16 +15,29 @@ const Journey = (): JSX.Element => {
           A whole new tech journey...
         </h4>
         <p className="text-base md:text-lg lg:text-xl font-bold mt-5 mb-6 ">
-          Bridging the gap between the tech talent in Calabar and talents
-          outside this location to match the available opportunities in the tech
-          market. As a Community we empower these talents by providing access to
-          resources, opportunities, and a collaborative networking platform that
-          inspires innovation, creativity, and inclusivity in the tech industry.
-          Gaining access to mentors who can guide your path.
+          Our community aims to bridge the gap between tech talents in Calabar
+          and those outside the location, by connecting them with the available
+          opportunities in the tech market. We provide access to resources,
+          opportunities, and a collaborative networking platform that inspires
+          innovation, creativity, and inclusivity in the tech industry.
+          Additionally, we offer mentorship programs that provide guidance to
+          individuals on their career path.
         </p>
 
         <div className="flex gap-10 flex-wrap font-poppins font-medium ">
-          <button
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button
+              type="button"
+              className="bg-appYellow200 hover:scale-110 px-6 py-3 rounded-lg transition-all"
+            >
+              Join us now
+            </button>
+          </a>
+          {/* <button
             type="button"
             className="bg-appYellow200 hover:scale-110 px-6 py-3 rounded-lg transition-all"
           >
@@ -35,7 +48,7 @@ const Journey = (): JSX.Element => {
             className="border rounded-lg px-6 py-3 border-appYellow200 hover:scale-110 transition-all"
           >
             Sponsor
-          </button>
+          </button> */}
         </div>
       </article>
     </section>
