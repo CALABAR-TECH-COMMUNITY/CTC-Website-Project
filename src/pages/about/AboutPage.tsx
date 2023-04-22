@@ -6,8 +6,105 @@ import mission from "assets/images/mission.png";
 import community from "assets/images/about-img2.png";
 import HomeLayout from "layout/HomeLayout";
 import "./About.css";
+import TeamMemberCard from "./Team";
+
+import Grace from "assets/images/grace.jpg";
+import Amani from "assets/images/amani.jpg";
+import Florence from "assets/images/florence.jpeg";
+import Bassey from "assets/images/bassey.jpeg";
+// import {
+//   ILogo,
+//   ITwitter,
+//   IWhatsapp,
+//   ISlack,
+//   ILogoFooter,
+//   IArrowUp,
+// } from "utils/icons.utils";
+import {
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+} from "react-icons/ai";
 
 export default function About() {
+  const teamMembers = [
+    {
+      name: "Amani Kanu",
+      role: "Founder",
+      socialLinks: [
+        {
+          label: "Twitter",
+          icon: <AiFillTwitterCircle color="#0072b1" size={30} />,
+          url: "https://twitter.com/",
+        },
+        {
+          label: "LinkedIn",
+          icon: <AiFillLinkedin size={30} color="#1DA1F2" />,
+          url: "https://www.linkedin.com/in/amani-kanu/",
+        },
+      ],
+      imageSrc: Amani,
+      description:
+        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+    },
+    {
+      name: "Florence Arong",
+      role: "Co-founder",
+      socialLinks: [
+        {
+          label: "Twitter",
+          icon: <AiFillTwitterCircle color="#0072b1" size={30} />,
+          url: "https://twitter.com/",
+        },
+        {
+          label: "LinkedIn",
+          icon: <AiFillLinkedin size={30} color="#1DA1F2" />,
+          url: "https://www.linkedin.com/in/florencesarah-arong-egwu",
+        },
+      ],
+      imageSrc: Florence,
+      description:
+        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+    },
+    {
+      name: "Grace Effiong",
+      role: "Co-founder",
+      socialLinks: [
+        {
+          label: "Twitter",
+          icon: <AiFillTwitterCircle color="#0072b1" size={30} />,
+          url: "https://twitter.com/",
+        },
+        {
+          label: "LinkedIn",
+          icon: <AiFillLinkedin size={30} color="#1DA1F2" />,
+          url: "https://www.linkedin.com/in/grace-effiong/",
+        },
+      ],
+      imageSrc: Grace,
+      description:
+        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+    },
+    {
+      name: "BASSEY ARCHIBONG",
+      role: "Co-founder",
+      socialLinks: [
+        {
+          label: "Twitter",
+          icon: <AiFillTwitterCircle color="#0072b1" size={30} />,
+          url: "https://twitter.com/",
+        },
+        {
+          label: "LinkedIn",
+          icon: <AiFillLinkedin size={30} color="#1DA1F2" />,
+          url: "https://www.linkedin.com/in/bassey-m-archibong",
+        },
+      ],
+      imageSrc: Bassey,
+      description:
+        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+    },
+  ];
+
   return (
     <HomeLayout>
       <div
@@ -41,14 +138,14 @@ export default function About() {
           <div className="about-comm-text">
             <h2>our community</h2>
             <p className="mt-8">
-              We are a group of tech enthusiasts and tech professionals who
-              come together to connect, share resources, and enhance our tech
-              skills. Through active engagement on our platform, we aim to
-              provide an inclusive environment that caters to individuals
-              looking to acquire new skills or upgrade their existing ones. We
-              understand that being in the company of like-minded individuals is
-              a great motivator for learning and growth, and we take pride in
-              fostering a sense of community that supports these values.
+              We are a group of tech enthusiasts and tech professionals who come
+              together to connect, share resources, and enhance our tech skills.
+              Through active engagement on our platform, we aim to provide an
+              inclusive environment that caters to individuals looking to
+              acquire new skills or upgrade their existing ones. We understand
+              that being in the company of like-minded individuals is a great
+              motivator for learning and growth, and we take pride in fostering
+              a sense of community that supports these values.
             </p>
 
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform">
@@ -123,6 +220,29 @@ export default function About() {
                   our interactions and endeavors.
                 </p>
               </p>
+            </div>
+          </div>
+
+          {/* <TeamMemberCard/> */}
+          <div className="container mx-auto px-4 py-8 mt-[200px]">
+            <h2 className="text-6xl font-semibold mb-8 text-center text-appYellow100">
+              Meet the team
+            </h2>
+            <div className="flex flex-wrap justify-center">
+              {teamMembers.map((item) => (
+                <div
+                  className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4"
+                  key={item.name}
+                >
+                  <TeamMemberCard
+                    name={item.name}
+                    role={item.role}
+                    socialLinks={item.socialLinks}
+                    imageSrc={item.imageSrc}
+                    description={item.description}
+                  />
+                </div>
+              ))}
             </div>
           </div>
         </div>

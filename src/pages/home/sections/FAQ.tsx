@@ -28,7 +28,8 @@ const FAQ = (): JSX.Element => {
         "The Calabar Tech Community organizes a variety of events, including hackathons, workshops, meetups, and conferences. These events cover topics such as programming, entrepreneurship, data science, artificial intelligence, and blockchain.",
     },
     {
-      question: "How can I get involved in organizing events for the Calabar Tech Community?",
+      question:
+        "How can I get involved in organizing events for the Calabar Tech Community?",
       answer:
         "If you are interested in organizing events for the Calabar Tech Community, you can reach out to the community leaders or attend a community meeting to express your interest. The community is always looking for enthusiastic and dedicated individuals to help organize events and activities.",
     },
@@ -38,12 +39,14 @@ const FAQ = (): JSX.Element => {
         "No, the Calabar Tech Community is open to anyone who is interested in technology and innovation. Whether you are a student, a professional in a non-tech field, or simply someone who is passionate about technology, you are welcome to join the community.        ",
     },
     {
-      question: "Does the Calabar Tech Community offer any training or mentorship programs?",
+      question:
+        "Does the Calabar Tech Community offer any training or mentorship programs?",
       answer:
         "Yes, the Calabar Tech Community offers training and mentorship programs for its members. These programs are designed to help members develop their skills, learn new technologies, and advance their careers in the tech industry.",
     },
     {
-      question: " How can I stay updated on the activities of the Calabar Tech Community?",
+      question:
+        " How can I stay updated on the activities of the Calabar Tech Community?",
       answer:
         "You can stay updated on the activities of the Calabar Tech Community by following their social media pages, subscribing to their newsletter, attending community events, or joining their online discussion forums.",
     },
@@ -56,16 +59,18 @@ const FAQ = (): JSX.Element => {
 
       <ul className="grid  md:grid-cols-2 gap-y-10 gap-x-11 mt-16 ">
         {faqs.map((faq, index) => {
-          return <FAQCard faq={faq}key={index} />;
+          return <FAQCard faq={faq} key={index} />;
         })}
       </ul>
 
-      <button
-        className="font-poppins font-medium py-3 text-sm px-5 rounded-lg bg-appYellow200 mt-12 mx-auto flex hover:scale-110 transition-all"
-        type="button"
-      >
-        Send us a mail
-      </button>
+      <a href="mailto:calabartechcomm@gmail.com">
+        <button
+          className="font-poppins font-medium py-3 text-sm px-5 rounded-lg bg-appYellow200 mt-12 mx-auto flex hover:scale-110 transition-all"
+          type="button"
+        >
+          Send us a mail
+        </button>
+      </a>
     </section>
   );
 };

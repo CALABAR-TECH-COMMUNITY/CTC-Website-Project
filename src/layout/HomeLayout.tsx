@@ -3,14 +3,19 @@ import { ReactNode, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   ILogo,
-  ITwitter,
-  IWhatsapp,
-  ISlack,
   ILogoFooter,
   IArrowUp,
 } from "utils/icons.utils";
 
-import { AiOutlineMenu, AiOutlineClose, AiOutlineSearch } from "react-icons/ai";
+import {
+  AiOutlineMenu,
+  AiOutlineClose,
+  AiFillTwitterCircle,
+  AiFillLinkedin,
+  AiFillFacebook,
+  AiOutlineSearch
+} from "react-icons/ai";
+
 import WrappedButton from "components/Button";
 
 interface Tab {
@@ -24,7 +29,7 @@ export const tabs: Tab[] = [
   { name: "About Us", link: routes.ABOUT_PAGE, index: 1 },
   { name: "Events", link: routes.EVENTS_PAGE, index: 2 },
   { name: "Projects", link: routes.PROJECTS_PAGE, index: 3 },
-  { name: "Contact", link: "", index: 4 },
+  // { name: "Contact", link: "", index: 4 },
 ];
 
 interface LayoutProps {
@@ -149,9 +154,9 @@ const HomeLayout = ({ children, hideNav }: LayoutProps) => {
             <h2 className="font-[700] text-[20px] mb-4">Quick Links</h2>
             <ul className="md:list-disc md:ml-5 font-[400] text-[16px]">
               <li>
-                <Link to={""}>Contact Us</Link>
+                <a href="mailto:calabartechcomm@gmail.com">Contact Us</a>
               </li>
-              <li>
+              {/* <li>
                 <Link to={"/jobs"}>Job Opportunities</Link>
               </li>
               <li>
@@ -159,7 +164,7 @@ const HomeLayout = ({ children, hideNav }: LayoutProps) => {
               </li>
               <li>
                 <Link to={""}>Blog</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="text-[var(--cc-grey-3)]">
@@ -167,9 +172,20 @@ const HomeLayout = ({ children, hideNav }: LayoutProps) => {
               Social Media
             </h2>
             <div className="flex justify-center gap-4  m-auto w-[50%]">
-              <img src={ITwitter} alt="twitter" />
-              <img src={ISlack} alt="slack" />
-              <img src={IWhatsapp} alt="whatsapp" />
+              <Link to={"https://twitter.com/tech_calabar"}>
+                {" "}
+                <AiFillTwitterCircle size={30} color="#0072b1" />
+              </Link>
+              <Link
+                to={"https://www.linkedin.com/company/calabar-tech-community/"}
+              >
+                {" "}
+                <AiFillLinkedin size={30} color="#1DA1F2" />
+              </Link>
+              <Link to={"hhttps://facebook.com/techCalabar"}>
+                {" "}
+                <AiFillFacebook size={30} color="#4267B2" />
+              </Link>
             </div>
           </div>
         </div>
