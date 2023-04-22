@@ -15,8 +15,12 @@ const Hero = (): JSX.Element => {
           </h1>
 
           <p className="my-8 text-base font-normal text-white max-w-[33.75rem]">
-            Stay connected with the best tech community in Nigeria, meet new
-            people, connect, share ideas, get mentorship and stay techie..
+            Stay connected with the premier tech community in Nigeria, where you
+            can engage with fellow tech enthusiasts, network with new
+            individuals, exchange ideas, receive mentorship, and stay up-to-date
+            with the latest technological advancements. Join us to foster a
+            thriving community of techies who are passionate about continuous
+            learning and growth in the ever-evolving field of technology.
           </p>
 
           <a
