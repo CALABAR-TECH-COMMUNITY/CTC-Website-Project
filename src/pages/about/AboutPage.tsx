@@ -41,20 +41,16 @@ export default function About() {
           <div className="about-comm-text">
             <h2>our community</h2>
             <p className="mt-8">
-              We're community of techies that connect, share resources, and
-              build their tech skills. We do this through engagement on our
-              platform.
+              We are a group of tech enthusiasts and tech professionals who
+              come together to connect, share resources, and enhance our tech
+              skills. Through active engagement on our platform, we aim to
+              provide an inclusive environment that caters to individuals
+              looking to acquire new skills or upgrade their existing ones. We
+              understand that being in the company of like-minded individuals is
+              a great motivator for learning and growth, and we take pride in
+              fostering a sense of community that supports these values.
             </p>
-            <p>
-              Whether you're just starting out or you're looking to upgrade your
-              skills, we have something for you here at Calabar Tech Community!
-            </p>
-            <p>
-              We know that when it comes to learning new things and growing your
-              skills, there's nothing better than being surrounded by other
-              people who are trying to do the same thing—and we believe that's
-              what makes our community so special.
-            </p>
+
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform">
               Join us now
             </a>
@@ -73,31 +69,59 @@ export default function About() {
           </div>
           <div className="statement-cards">
             <div className="vision card">
-              <img src={vision} alt="" />
+              <img src={value} alt="" />
               <h3>vision</h3>
               <p>
-                Our vision is to empower the Community of Calabar through
-                technology by providing access to resources, opportunities, and
-                a collaborative networking platform that inspires
-                innovation,creativity, and inclusivity in the tech industry
-              </p>
-            </div>
-            <div className="value card">
-              <img src={value} alt="" />
-              <h3>our value</h3>
-              <p>
-                Building a vibrant and inclusive community that drives
-                innovation and collaboration in technology, advancing the
-                industry and empowering individuals to achieve their goals.
+                Our goal is to empower the Calabar community through technology
+                by facilitating access to resources, opportunities, and a
+                collaborative networking platform that fosters innovation,
+                creativity, and inclusivity within the tech industry. We aspire
+                to bridge the gap between the local tech ecosystem and the
+                global landscape, creating a brighter future for Calabar and
+                beyond.
               </p>
             </div>
             <div className="mission card">
               <img src={mission} alt="" />
               <h3>mission</h3>
               <p>
-                Our mission is to assist individuals in the community by
-                promoting self-sufficiency through continuous personal
-                development and connections with the appropriate network.
+                Our mission is to promote self-sufficiency in the community by
+                fostering continuous personal development and cultivating
+                connections with appropriate networks. We strive to empower
+                individuals to achieve their full potential through targeted
+                support, guidance, and resources that enable them to navigate
+                the ever-changing landscape of the modern world.
+              </p>
+            </div>
+            <div className="value card">
+              <img src={vision} alt="" />
+              <h3>our value</h3>
+              <p>
+                <b>Our Core values includes;</b>
+                <p className="mb-4 mt-2">
+                  <b className="text-lg">Inclusivity:</b> We strive to create a
+                  welcoming and supportive environment that embraces diversity
+                  and provides equal access to resources, opportunities, and
+                  connections to all members of our community.
+                </p>
+                <p className="mb-4">
+                  <b className="text-lg">Empowerment:</b> We aim to provide
+                  individuals with the skills, knowledge, and resources they
+                  need to succeed in the tech industry and achieve their
+                  personal and professional goals.
+                </p>
+                <p className="mb-4">
+                  <b className="text-lg">Innovation:</b> We encourage
+                  creativity, curiosity, and experimentation in the pursuit of
+                  new ideas, methods, and technologies that can drive positive
+                  change and advancement in the industry.
+                </p>
+                <p>
+                  <b>Accountability:</b> We hold ourselves and our community
+                  members to high ethical and professional standards, and we are
+                  committed to transparency, honesty, and responsibility in all
+                  our interactions and endeavors.
+                </p>
               </p>
             </div>
           </div>
