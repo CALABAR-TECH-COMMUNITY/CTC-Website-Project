@@ -113,7 +113,7 @@ const Stories = (): JSX.Element => {
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >
-                  <AiFillLinkedin size={30} /> {stories[userIndex].name}
+                  <AiFillLinkedin color="#0072b1" size={30} /> {stories[userIndex].name}
                 </a>
               </div>
             )}
@@ -125,7 +125,7 @@ const Stories = (): JSX.Element => {
                   rel="noopener noreferrer"
                   className="flex items-center"
                 >
-                  <AiFillTwitterCircle size={30} />@{stories[userIndex].twitter}
+                  <AiFillTwitterCircle size={30} color="#1DA1F2" />@{stories[userIndex].twitter}
                 </a>
               </div>
             )}
