@@ -182,8 +182,7 @@ const HomeLayout = ({ children, hideNav }: LayoutProps) => {
                 {" "}
                 <AiFillLinkedin size={30} color="#1DA1F2" />
               </Link>
-              <Link to={"hhttps://facebook.com/techCalabar"}>
-                {" "}
+              <Link to={"https://facebook.com/techCalabar"}>
                 <AiFillFacebook size={30} color="#4267B2" />
               </Link>
             </div>
