@@ -7,7 +7,7 @@ import {
 import { useState } from "react";
 
 import ElipsesIcon from "assets/images/landingPage/ellipses.svg";
-import { URLS } from "assets/data/dummyURLs";
+// import { URLS } from "assets/data/dummyURLs";
 import sylvsus from "assets/images/sylvsus.png";
 import Michael from "assets/images/Michael.jpg";
 import Akase from "assets/images/Akase.jpg";

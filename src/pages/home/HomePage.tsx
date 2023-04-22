@@ -2,11 +2,11 @@ import HomeLayout from "layout/HomeLayout";
 import { useEffect } from "react";
 
 import FAQ from "./sections/FAQ";
-import FeaturedJobs from "./sections/FeaturedJobs";
+// import FeaturedJobs from "./sections/FeaturedJobs";
 import GalleryPhotos from "./sections/GalleryPhotos";
 import Hero from "./sections/Hero";
 import Journey from "./sections/Journey";
-import Sponsors from "./sections/Sponsors";
+// import Sponsors from "./sections/Sponsors";
 import Stories from "./sections/Stories";
 import UpcomingEvents from "./sections/UpcomingEvents";
 
