@@ -19,19 +19,19 @@ const TeamMemberCard = ({
 
   return (
     <div
-      className={`bg-white rounded-lg shadow-md p-6 relative transition-all h-[300px] ${
+      className={`bg-white rounded-lg shadow-md p-6 relative transition-all h-[350px] ${
         hovered ? "hover:bg-appYellow200" : ""
       }`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img src={imageSrc} alt={name} className="w-32 h-32 rounded-full mb-4" />
+      <img src={imageSrc} alt={name} className="w-32 h-34 rounded-full mb-8" />
       <div className="text-xl font-medium mb-2">{name}</div>
       <div className="text-gray-500 text-sm mb-4">{role}</div>
       {hovered && (
         <div className="absolute inset-0 bg-appYellow200  z-10 rounded-lg flex items-center justify-center">
-          <div className="text-white font-bold text-center p-4">
-            <p className="mb-2">{description}</p>
+          <div className="text-white text-justify text-center p-4">
+            <p className="mb-2 text-xs text-black">{description}</p>
             <div className="flex justify-center">
               {socialLinks.map((link:any) => (
                 <a

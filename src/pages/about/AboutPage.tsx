@@ -20,10 +20,7 @@ import Bassey from "assets/images/bassey.jpeg";
 //   ILogoFooter,
 //   IArrowUp,
 // } from "utils/icons.utils";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-} from "react-icons/ai";
+import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
 
 export default function About() {
   const teamMembers = [
@@ -34,7 +31,7 @@ export default function About() {
         {
           label: "Twitter",
           icon: <AiFillTwitterCircle color="#0072b1" size={30} />,
-          url: "https://twitter.com/",
+          url: "https://twitter.com/AmaniKanu",
         },
         {
           label: "LinkedIn",
@@ -44,7 +41,7 @@ export default function About() {
       ],
       imageSrc: Amani,
       description:
-        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+        "Amani Kanu is an accomplished software engineer with over four years of experience developing robust web applications for both domestic and international clients. He is also the founder of the Calabar Tech Community, which has played a pivotal role in providing access to technical skills and employment opportunities for numerous tech enthusiasts. As a skilled community builder, Amani has demonstrated exceptional proficiency in fostering strong relationships within the tech industry. Moreover, he has devoted his time to mentoring aspiring technologists, offering guidance and assistance in navigating their career paths. Overall, Amani's contributions to the tech community have been highly valuable, and he is widely regarded as a respected figure in the field.",
     },
     {
       name: "Florence Arong",
@@ -72,7 +69,7 @@ export default function About() {
         {
           label: "Twitter",
           icon: <AiFillTwitterCircle color="#0072b1" size={30} />,
-          url: "https://twitter.com/",
+          url: "https://twitter.com/Grace_ffiong",
         },
         {
           label: "LinkedIn",
@@ -82,7 +79,7 @@ export default function About() {
       ],
       imageSrc: Grace,
       description:
-        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+        "Grace Effiong is a frontend engineer who possesses a strong interest in fostering the growth of individuals in the technology sector. With over three years of experience, she has gained expertise in developing user-friendly and responsive web interfaces utilizing React.js and Next.js frameworks. Grace is well-versed in frontend technologies, and is passionate about assisting novices in the tech industry by monitoring their progress. Her commitment to mentoring and guiding beginners has the potential to shape their professional journeys and promote the development of a more diverse and inclusive tech community.",
     },
     {
       name: "BASSEY ARCHIBONG",
@@ -101,7 +98,7 @@ export default function About() {
       ],
       imageSrc: Bassey,
       description:
-        "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community.",
+        "Bassey Archibong is an experienced product manager with in-depth knowledge of the startup industry in Nigeria and a talent for innovative thinking. He continually challenges the status quo and seeks out new opportunities to excel. Bassey demonstrates excellence in launching cutting-edge products, mentoring emerging talent, and collaborating with cross-functional teams. However, his interests extend beyond business, as he is also dedicated to empowering the youth of Calabar by assisting them in securing gainful employment in the technology field. With his sharp wit and dynamic energy, Bassey is well-equipped to help individuals achieve their career goals, while simultaneously making the process enjoyable, competitive, and thrilling.",
     },
   ];
 
@@ -147,7 +144,16 @@ export default function About() {
               motivator for learning and growth, and we take pride in fostering
               a sense of community that supports these values.
             </p>
-
+            <p>
+              We are committed to making work experience and career growth more
+              accessible to everyone, regardless of their background or
+              circumstances.
+            </p>{" "}
+            <p>
+              We believe that everyone has the potential to succeed in the
+              workforce, and we are working to create opportunities for everyone
+              to reach their full potential.
+            </p>
             <a href="https://docs.google.com/forms/d/e/1FAIpQLScy4nFHFFml0N-BN6mxcctqKoqyIF4UwJ1Us-KfLZecn0MpIg/viewform">
               Join us now
             </a>
