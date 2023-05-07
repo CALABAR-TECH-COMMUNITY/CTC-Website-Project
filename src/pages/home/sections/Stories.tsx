@@ -34,6 +34,15 @@ const Stories = (): JSX.Element => {
       photo: Obasi,
     },
     {
+      name: "Samuel Ekong",
+      role: "Backend developer",
+      linkedin: "",
+      twitter: "ekongsonjnr",
+      testimony:
+        "I was fortunate to land a job through direct referrals from the Calabar Tech Community without undergoing an interview. The organizers of the community are doing a remarkable job, and it's important to show appreciation for their efforts regularly. Although the tech ecosystem in the state wasn't well-established, the community's initiatives are helping to propel us forward and achieve greater heights. I'm grateful to the CTC for their contributions.",
+      photo: Ekong,
+    },
+    {
       name: "Sylvanus Ezekiel",
       role: "WordPress Developer",
       linkedin: "",
@@ -69,15 +78,7 @@ const Stories = (): JSX.Element => {
         "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community. This experience has boosted my morale and reinforced my passion for pursuing a career in tech. I extend my sincere appreciation to the Calabar Tech Community and urge them to continue being a valuable resource to individuals like myself.",
       photo: Maxwell,
     },
-    {
-      name: "Samuel Ekong",
-      role: "Backend developer",
-      linkedin: "",
-      twitter: "ekongsonjnr",
-      testimony:
-        "I was fortunate to land a job through direct referrals from the Calabar Tech Community without undergoing an interview. The organizers of the community are doing a remarkable job, and it's important to show appreciation for their efforts regularly. Although the tech ecosystem in the state wasn't well-established, the community's initiatives are helping to propel us forward and achieve greater heights. I'm grateful to the CTC for their contributions.",
-      photo: Ekong,
-    },
+    
   ];
   return (
     <section className="relative pt-20 pb-44">
@@ -137,13 +138,13 @@ const Stories = (): JSX.Element => {
             return (
               <figure
                 key={index}
-                className={`w-64 flex-shrink-0 hover:bg-appYellow200 h-[450px] rounded-t-xl overflow-hidden rounded-b-lg text-appGray100 hover:text-appGray900 hover:scale-95 transition-all cursor-pointer ${
+                className={`w-60 flex-shrink-0 hover:bg-appYellow200 h-[450px] rounded-t-xl overflow-hidden rounded-b-lg text-appGray100 hover:text-appGray900 hover:scale-95 transition-all cursor-pointer ${
                   index == userIndex && "bg-appYellow200"
                 }`}
                 onClick={() => setUserIndex(index)}
               >
                 <img
-                  className="h-52 w-full object-cover "
+                  className="h-52 w-full "
                   src={user.photo}
                   alt="CTC user"
                 />
