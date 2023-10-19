@@ -9,7 +9,8 @@ import image53 from "assets/images/image 53.png";
 import image56 from "assets/images/image 56.png";
 import circle from "assets/images/circle.png";
 import HomeLayout from "layout/HomeLayout";
-import EventCard from "./components/EventCard";
+import UpcomingEvents from "pages/home/sections/UpcomingEvents";
+
 // import ResponsiveVoice from "responsivevoice";
 function Events() {
   // function speak() {
@@ -80,25 +81,12 @@ function Events() {
           </h1>
         </header>
 
-        <h2 className="text-center text-size-48 leading-lineh-54 tracking-custom1 font-weight-700 font-comfort h-[54px] top-[110px] py-20 text-darkbtn">
+        {/* <h2 className="text-center text-size-48 leading-lineh-54 tracking-custom1 font-weight-700 font-comfort h-[54px] top-[110px] py-20 text-darkbtn">
           Upcoming Events
-        </h2>
-
-        {/* Grids */}
-        <section className="grid grid-cols-1 pt-20 pb-14 md:grid-cols-2 overflow-hidden lg:grid-cols-3 responsive-padx-container gap-10 place-content-center ml-11">
-          {gridDetails.map((details, index) => {
-            return <EventCard key={index + 1} {...details} />;
-          })}
-          <br />
-          <br />
-        </section>
-        {/* End of Grids*/}
-        <br />
-        <br />
-        <br />
-        {/* <button onClick={speak}>Hello World!</button> */}
-        <br />
-        <section className="w-full bg-[#1D1D21] p-0 overflow-hidden relative">
+        </h2> */}
+        <UpcomingEvents />
+     
+        <section className="w-full bg-[#1D1D21] p-0 overflow-hidden relative mt-40">
           <img
             src={circle}
             alt="Top Circle"
@@ -174,10 +162,10 @@ function Events() {
             />
           </div>
         </section>
-        <h3 className="p-12 font-extrabold text-5xl text-darkbtn text-center">
+        <h3 className="p-12 font-extrabold text-5xl text-darkbtn text-center mt-40">
           Event Photos
         </h3>
-        <section className="ml-12 p-0 overflow-hidden mb-8">
+        <section className="ml-12 p-0 overflow-hidden mb-40">
         <figure className=" grid grid-cols-2 md:grid-cols-3 p-12 gap-x-4">
         <div className="grid grid-cols-1 gap-y-4">
           <img className="rounded-md object-cover w-full" src={image18} alt="" />

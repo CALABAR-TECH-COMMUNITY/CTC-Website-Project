@@ -38,7 +38,7 @@ const Hero = (): JSX.Element => {
 
           <div className="flex items-center gap-16 mt-10">
             <dl>
-              <dd className="font-bold text-3xl text-white">400+</dd>
+              <dd className="font-bold text-3xl text-white">500+</dd>
               <dt className="text-lg font-light text-white">Members</dt>
             </dl>
             {/* <dl>
