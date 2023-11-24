@@ -90,7 +90,7 @@ function Events() {
           <img
             src={circle}
             alt="Top Circle"
-            className="absolute top-0 right-0 mr-0"
+            className="absolute top-0 z-0 right-0 mr-0"
           />
           <p className="font-extrabold text-white text-center font-comforta text-size-48 pt-1">
             Past Events
