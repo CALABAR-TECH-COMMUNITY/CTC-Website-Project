@@ -52,8 +52,8 @@ const FAQ = (): JSX.Element => {
     },
   ];
   return (
-    <section className="pt-16 pb-14 responsive-padx-container relative">
-      <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-appGray200 font-weight-700 text-center ">
+    <section className="bg-darkblue pt-16 pb-14 responsive-padx-container relative">
+      <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white font-weight-700 text-center ">
         Frequently Asked Questions
       </h4>
 
@@ -65,7 +65,7 @@ const FAQ = (): JSX.Element => {
 
       <a href="mailto:calabartechcomm@gmail.com">
         <button
-          className="font-poppins font-medium py-3 text-sm px-5 rounded-lg bg-appYellow200 mt-12 mx-auto flex hover:scale-110 transition-all"
+          className="font-poppins font-medium py-3 text-sm px-5 rounded-lg bg-appYellow200 text-appBlack mt-12 mx-auto flex hover:bg-appYellow100 transition-all"
           type="button"
         >
           Send us a mail

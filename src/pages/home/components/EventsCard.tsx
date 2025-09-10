@@ -1,107 +1,75 @@
 import { IoIosPin } from "react-icons/io";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
 import { IoCloseCircleOutline } from "react-icons/io5";
 
 const EventsCard = ({
-  isLast,
   event,
 }: {
-  isLast: boolean;
   event: any;
 }): JSX.Element => {
   const [isModalOpen, setModalVisibility] = useState(false);
+
   const handleModalToggle = () => {
     setModalVisibility(!isModalOpen);
   };
+
   return (
     <div>
-      <li
-        className={`event-list  shadow-eventCardShadow rounded-xl overflow-hidden relative font-reem ${
-          isLast && "xl:hidden"
-        }  `}
-      >
-
+      <li className="bg-darkash rounded-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300 ease-in-out shadow-lg w-full max-w-sm mx-auto">
         <img
-          className="h-58 w-full object-content"
-          draggable={false}
+          className="h-56 w-full object-cover"
           src={event.poster}
           alt={event.title}
         />
-        <p className="bg-white py-1 px-3 absolute right-4 top-4 uppercase font-normal text-xs ">
-          Free
-        </p>
-        <div className="bg-white py-5 px-7">
-          <div className="flex">
-            <div className=" font-normal">
-              <time className="block text-lg text-appYellow100">
-                {event.month}
-              </time>
-              <span className="block text-3xl">
-                {event.day}
-                <sup className="text-xs">th</sup>
-              </span>
+        <div className="p-6">
+          <div className="flex items-start justify-between">
+            <div className="flex-shrink-0 text-center mr-4">
+              <p className="text-appYellow200 text-xl font-bold">{event.month.toUpperCase()}</p>
+              <p className="text-white text-4xl font-bold">{event.day}</p>
             </div>
-
-            <div className=" border-l-2 border-appGray400 ml-3 pl-3 md:ml-4 md:pl-4 lg:ml-5 lg:pl-5 font-poppins ">
-              <h6 className="font-medium text-appGray600 text-lg">
-                {event.title}
-              </h6>
-              <summary className="font-light text-sm mt-1 mb-2 truncate">
-                {event.subTitle}
-              </summary>
-
-              <address className="font-poppins font-normal text-sm text-appGray700 not-italic">
-                <IoIosPin className="inline text-base" /> {event.locatiion}
-              </address>
+            <div className="flex-grow">
+              <h3 className="text-white font-bold text-xl mb-2 leading-tight">{event.title}</h3>
+              <div className="flex items-center text-ash text-sm">
+                <IoIosPin className="inline mr-2" />
+                <span>{event.locatiion}</span>
+              </div>
             </div>
           </div>
-
-          <div className="flex justify-between items-center mt-8 font-poppins ">
-            {/* <Link to="" className="underline font-normal text-xs text-appGray800">
-            View details
-          </Link> */}
-
-            <Link
-              to=""
-              className="font-medium text-sm text-appBlue100 px-3 py-2 border-2 rounded-lg border-appYellow100 hover:bg-appYellow100 hover:text-white"
-              type="button"
+          <div className="mt-6 flex justify-between items-center">
+            <p className="text-white font-semibold">Free</p>
+            <button
               onClick={handleModalToggle}
+              className="px-6 py-2 bg-appYellow200 text-appBlack font-bold rounded-full hover:bg-appYellow100 transition-colors duration-300"
             >
               Register
-            </Link>
+            </button>
           </div>
         </div>
       </li>
-      <div
-        className={`fixed  z-[100] items-center justify-center top-0 right-0 left-0 bottom-0 transition-all   ${
-          !isModalOpen && "translate-y-full"
-        } `}
-      >
-        <div className="h-full  w-[400px]  z-[102] relative pt-12">
-          <IoCloseCircleOutline
-            onClick={handleModalToggle}
-            className="text-red text-5xl absolute right-3 top-3 z-[105] cursor-pointer animate-pulse"
-          />
-          <iframe
-            src={event.link}
-            width="640"
-            height="895"
-            frameborder="0"
-            marginheight="0"
-            marginwidth="0"
-          >
-            Loading…
-          </iframe>
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-[100]">
+          <div className="bg-white rounded-lg shadow-xl w-full max-w-lg relative m-4">
+            <button
+              onClick={handleModalToggle}
+              className="absolute top-2 right-2 text-darkash hover:text-appBlack z-[105]"
+            >
+              <IoCloseCircleOutline size={30} />
+            </button>
+            <div className="h-[80vh] overflow-y-auto">
+              <iframe
+                src={event.link}
+                className="w-full h-full"
+                frameBorder="0"
+                marginHeight={0}
+                marginWidth={0}
+              >
+                Loading…
+              </iframe>
+            </div>
+          </div>
         </div>
-
-        <button
-          type="button"
-          onClick={handleModalToggle}
-          className="bg-black absolute top-0 right-0 left-0 bottom-0 opacity-50 z-[101] "
-        />
-      </div>
+      )}
     </div>
   );
 };

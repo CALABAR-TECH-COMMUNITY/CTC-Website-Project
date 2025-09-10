@@ -1,193 +1,129 @@
+import HomeLayout from "layout/HomeLayout";
+import EventsCard from "pages/home/components/EventsCard";
+import header from "assets/images/header.svg";
 import flyer1 from "assets/images/flyer1.png";
 import flyer2 from "assets/images/flyer2.png";
 import flyer3 from "assets/images/flyer3.png";
 import flyer4 from "assets/images/flyer4.png";
-import gradient from "assets/images/gradient.png";
 import image18 from "assets/images/image 18.png";
 import image52 from "assets/images/image 52.png";
 import image53 from "assets/images/image 53.png";
 import image56 from "assets/images/image 56.png";
-import circle from "assets/images/circle.png";
-import HomeLayout from "layout/HomeLayout";
-import UpcomingEvents from "pages/home/sections/UpcomingEvents";
+import aiEEveentImage from "assets/images/events/ai_event.png";
 
-// import ResponsiveVoice from "responsivevoice";
-function Events() {
-  // function speak() {
-  //   ResponsiveVoice.speak("Hello World")
-  // }
-  const gridDetails = [
+
+const upcomingEvents = [
     {
-      image: flyer1,
-      month: "FEB",
-      date: "15",
-      superscript: "th",
-      title: "Navigating you way through tech (FREE)",
-      desc: "Get to meet the professionals...",
-      location: "Calabar, Nigeria",
-    },
-    {
-      image: flyer2,
-      month: "FEB",
-      date: "15",
-      superscript: "th",
-      title: "Navigating you way through tech (FREE)",
-      desc: "Get to meet the professionals...",
-      location: "Calabar, Nigeria",
-    },
-    {
-      image: flyer3,
-      month: "FEB",
-      date: "15",
-      superscript: "th",
-      title: "Pizza Hangout 3.0 (FREE)",
-      desc: "Get to meet the best tech community in Nigeria",
-      location: "Calabar, Nigeria",
-    },
-    {
-      image: flyer3,
-      month: "FEB",
-      date: "15",
-      superscript: "th",
-      title: "Pizza Hangout 3.0 (FREE)",
-      desc: "Get to meet the best tech community in Nigeria",
-      location: "Calabar, Nigeria",
-    },
-    {
-      image: flyer3,
-      month: "FEB",
-      date: "15",
-      superscript: "th",
-      title: "Pizza Hangout 3.0 (FREE)",
-      desc: "Get to meet the best tech community in Nigeria",
-      location: "Calabar, Nigeria",
-    },
-    {
-      image: flyer4,
-      month: "FEB",
-      date: "15",
-      superscript: "th",
-      title: "Navigating you way through tech (FREE)",
-      desc: "Get to meet the professionals...",
-      location: "Calabar, Nigeria",
+      title: "Navigating your career as AI and MACHINE LEARNING Engineer",
+      subTitle: "",
+      poster: aiEEveentImage,
+      link: "https://docs.google.com/forms/d/e/1FAIpQLSeJ-KI1e2DJFJZbdiMPySTsa0qb67aU_UWhGDY9vfV11ylb2Q/viewform?embedded=true",
+      locatiion: "Virtual",
+      month: "May",
+      day: "20",
     },
   ];
+
+const pastEvents = [
+  {
+    image: flyer1,
+    date: "Feb 23, 2023 - Virtual (Google meet)",
+    title: "Introduction to tech",
+    description: "A comprehensive introduction to the world of technology, covering career paths in Product Management, Mobile App Development, and Software Engineering.",
+    tags: ["Career Talks", "Product Management", "Mobile App Dev", "Software Engineering"],
+  },
+  {
+    image: flyer2,
+    date: "Mar 15, 2023 - Calabar, Nigeria",
+    title: "Navigating Your Way Through Tech",
+    description: "An in-person event where attendees had the opportunity to meet and learn from seasoned professionals in the tech industry.",
+    tags: ["Networking", "Career Growth", "Tech Industry"],
+  },
+  {
+    image: flyer3,
+    date: "Apr 2, 2023 - Calabar, Nigeria",
+    title: "Pizza Hangout 3.0",
+    description: "A fun and informal hangout for members of the best tech community in Nigeria to connect, share ideas, and enjoy pizza.",
+    tags: ["Community", "Networking", "Hangout"],
+  },
+  {
+    image: flyer4,
+    date: "May 10, 2023 - Virtual",
+    title: "The Future of Web Development",
+    description: "A virtual seminar discussing the latest trends and technologies shaping the future of web development.",
+    tags: ["Web Development", "Future Tech", "Online Seminar"],
+  },
+];
+
+const eventPhotos = [image18, image52, image53, image56];
+
+const Events = () => {
   return (
     <HomeLayout>
-      <main className="font-comfort p-0 m-0">
-        <header className="h-32 md:h-36 lg:h-40 bg-[url(assets/images/header.svg)] bg-cover bg-center bg-no-repeat overflow-hidden flex items-center ">
-          <h1 className="text-6xl font-weight-700 text-left font-comfort sm:text-3xl md:text-5xl ml-11 md:ml-12 lg:ml-14 ">
-            Events
-          </h1>
+      <div className="bg-darkblue text-white">
+        <header 
+          className="relative h-60 flex items-center justify-center bg-cover bg-center"
+          style={{ backgroundImage: `url(${header})` }}
+        >
+          <div className="absolute inset-0 bg-black opacity-50"></div>
+          <h1 className="relative text-5xl font-bold">Events</h1>
         </header>
 
-        {/* <h2 className="text-center text-size-48 leading-lineh-54 tracking-custom1 font-weight-700 font-comfort h-[54px] top-[110px] py-20 text-darkbtn">
-          Upcoming Events
-        </h2> */}
-        <UpcomingEvents />
-     
-        <section className="w-full bg-[#1D1D21] p-0 overflow-hidden relative mt-40">
-          <img
-            src={circle}
-            alt="Top Circle"
-            className="absolute top-0 right-0 mr-0"
-          />
-          <p className="font-extrabold text-white text-center font-comforta text-size-48 pt-1">
-            Past Events
-          </p>
-          <div className=" gap-10 sm:gap-0 text-center sm:text-start responsive-padx-container mx-auto max-w-[66rem] py-9 flex flex-wrap sm:flex-nowrap">
-            <br />
-            <img
-              src={flyer1}
-              className="mx-auto w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]"
-              alt="flyer 1"
-            />
-            <p className="pl-[20px] text-white font-extrabold font-poppins">
-              Feb 23, 2023 - Virtual (Google meet)
-              <br />
-              <h3 className="text-xl font-comforta">Introduction to tech</h3>
-              <div className="flex flex-row flex-wrap p-3 ml-8 md:ml-0 lg:ml-0 font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
-                <p className="border rounded-full p-2">Career Talks</p>
-                <p className="border rounded-full p-2">Product Manaegment</p>
-                &nbsp;<p className="border rounded-full p-2">Mobile App Dev.</p>
-                <p className="border rounded-full p-2">Software Engineering</p>
-                <br />
-                <br />
-              </div>
-              <p className="font-light flex-wrap">
-                Lorem ipsum dolor sit amet consectetur. Felis eu feugiat
-                tincidunt lacus vitae sit. Mollis adipiscing orci ut donec
-                porttitor nulla cursus at. Venenatis cras ullamcorper adipiscing
-                risus leo lobortis non. In purus laoreet at imperdiet tempus
-                auctor magna. Turpis mi purus vivamus diam tortor mi lacinia
-                integer at. Massa tincidunt sit cum mattis habitasse duis risus.
-              </p>
-            </p>
-          </div>
-          <br />
-          <div className=" gap-10 z-20 relative sm:gap-0 text-center sm:text-start responsive-padx-container mx-auto max-w-[66rem] py-9 flex flex-wrap sm:flex-nowrap">
-            <br />
-            <img
-              src={flyer2}
-              className="mx-auto w-[150px] h-[100px] rounded-xl border-[5px] border-darkbtn sm:w-[50px]h-[50px]"
-              alt="flyer 1"
-            />
-            <p className="pl-[20px] text-white font-extrabold font-poppins">
-              Feb 23, 2023 - Virtual (Google meet)
-              <br />
-              <h3 className="text-xl font-comforta">Introduction to tech</h3>
-              <div className="flex flex-row flex-wrap p-3 ml-8 md:ml-0 lg:ml-0 font-extralight whitespace-nowrap overflow-hidden overflow-ellipsis">
-                <p className="border rounded-full p-2">Career Talks</p>
-                <p className="border rounded-full p-2">Product Manaegment</p>
-                &nbsp;<p className="border rounded-full p-2">Mobile App Dev.</p>
-                <p className="border rounded-full p-2">Software Engineering</p>
-                <br />
-                <br />
-              </div>
-              <p className="font-light flex-wrap">
-                Lorem ipsum dolor sit amet consectetur. Felis eu feugiat
-                tincidunt lacus vitae sit. Mollis adipiscing orci ut donec
-                porttitor nulla cursus at. Venenatis cras ullamcorper adipiscing
-                risus leo lobortis non. In purus laoreet at imperdiet tempus
-                auctor magna. Turpis mi purus vivamus diam tortor mi lacinia
-                integer at. Massa tincidunt sit cum mattis habitasse duis risus.
-              </p>
-            </p>
-          </div>
-          <div className="relative z-0 h-1/5 p-0">
-            <img
-              className="absolute bottom-0 right-0"
-              src={gradient}
-              alt="Gradient"
-            />
+        <section className="py-20 responsive-padx-container">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Upcoming <span className="text-appYellow200">Events</span>
+          </h2>
+          {upcomingEvents.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+              {upcomingEvents.map((event, index) => (
+                <EventsCard event={event} key={index} />
+              ))}
+            </div>
+          ) : (
+            <p className="text-center text-ash">No upcoming events at the moment. Please check back later!</p>
+          )}
+        </section>
+
+        <section className="bg-darkash py-20">
+          <div className="responsive-padx-container">
+            <h2 className="text-4xl font-bold text-center mb-12">
+              Past <span className="text-appYellow200">Events</span>
+            </h2>
+            <div className="grid md:grid-cols-2 gap-10">
+              {pastEvents.map((event, index) => (
+                <div key={index} className="bg-darkblue rounded-lg overflow-hidden md:flex">
+                  <img src={event.image} alt={event.title} className="w-full md:w-1/3 h-auto object-cover"/>
+                  <div className="p-6">
+                    <p className="text-appYellow200 text-sm mb-2">{event.date}</p>
+                    <h3 className="text-2xl font-bold mb-3">{event.title}</h3>
+                    <p className="text-lightash mb-4">{event.description}</p>
+                    <div className="flex flex-wrap gap-2">
+                      {event.tags.map(tag => (
+                        <span key={tag} className="bg-appAsh text-lightash px-3 py-1 rounded-full text-sm">{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </section>
-        <h3 className="p-12 font-extrabold text-5xl text-darkbtn text-center mt-40">
-          Event Photos
-        </h3>
-        <section className="ml-12 p-0 overflow-hidden mb-40">
-        <figure className=" grid grid-cols-2 md:grid-cols-3 p-12 gap-x-4">
-        <div className="grid grid-cols-1 gap-y-4">
-          <img className="rounded-md object-cover w-full" src={image18} alt="" />
-          <img className="rounded-md object-cover w-full" src={image18} alt="" />
-        </div>
 
-        <img
-          className="h-full object-cover rounded-md md:rounded-xl md:-mt-10"
-          src={image52}
-          alt=""
-        />
-
-        <div className=" flex md:grid grid-cols-1 gap-4 mt-4 md:mt-0 ">
-          <img className="rounded-md" src={image53} alt="" />
-          <img className="rounded-md" src={image56} alt="" />
-          <img className="rounded-md hidden md:hidden lg:block" src={image56} alt="" />
-        </div>
-      </figure>
-      </section>
-      </main>
+        <section className="py-20 responsive-padx-container">
+          <h2 className="text-4xl font-bold text-center mb-12">
+            Event <span className="text-appYellow200">Photos</span>
+          </h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {eventPhotos.map((photo, index) => (
+              <div key={index} className="overflow-hidden rounded-lg shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                <img src={photo} alt={`Event photo ${index + 1}`} className="w-full h-full object-cover cursor-pointer"/>
+              </div>
+            ))}
+          </div>
+        </section>
+      </div>
     </HomeLayout>
   );
-}
+};
 
 export default Events;

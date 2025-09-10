@@ -1,29 +1,17 @@
+import { useState } from "react";
 import {
-  AiOutlinePlus,
-  AiFillTwitterCircle,
   AiFillLinkedin,
+  AiFillTwitterCircle,
 } from "react-icons/ai";
 
-import { useState } from "react";
-
-import ElipsesIcon from "assets/images/landingPage/ellipses.svg";
-// import { URLS } from "assets/data/dummyURLs";
+import Obasi from "assets/images/obasi.jpg";
+import Ekong from "assets/images/ekong.jpeg";
 import sylvsus from "assets/images/sylvsus.png";
 import Michael from "assets/images/Michael.jpg";
 import Akase from "assets/images/Akase.jpg";
 import Maxwell from "assets/images/Maxwell.jpg";
-import Ekong from "assets/images/ekong.jpeg";
-import Obasi from "assets/images/obasi.jpg";
 
-const Stories = (): JSX.Element => {
-  const [userIndex, setUserIndex] = useState(0);
-
-  function trimString(string: string, numberOfWord: number) {
-    var cut = string.indexOf(" ", numberOfWord);
-    if (cut == -1) return string;
-    return `${string.substring(0, cut)}...`;
-  }
-  const stories = [
+const stories = [
     {
       name: "Obasi Kanu",
       role: "Product Manager",
@@ -78,89 +66,53 @@ const Stories = (): JSX.Element => {
         "I had always aspired to learn how to code, but had struggled to find the right resources to advance my career until I was introduced to the Calabar Tech Community. Since then, I have been fortunate to benefit from the wealth of knowledge within the community. This experience has boosted my morale and reinforced my passion for pursuing a career in tech. I extend my sincere appreciation to the Calabar Tech Community and urge them to continue being a valuable resource to individuals like myself.",
       photo: Maxwell,
     },
-    
   ];
+
+const Stories = (): JSX.Element => {
+  const [userIndex, setUserIndex] = useState(0);
+
   return (
-    <section className="relative pt-20 pb-44">
-      <img
-        className="absolute h-56 md:h-60 lg:h-64 w-56 md:w-60 lg:w-64 -left-14"
-        src={ElipsesIcon}
-        draggable={false}
-        alt="ellipse"
-      />
-      <h4 className="text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-appGray200 font-weight-700 text-center  ">
-        Stories
-      </h4>
-
-      <div className="responsive-padx-container blurr-hidden flex flex-wrap gap-10 lg:gap-5 lg:grid grid-cols-6 mt-16 ">
-        <article className="col-span-2 mr-8 ">
-          <p className="text-justify font-comforta text-appGray200 text-sm md:text-base lg:text-lg xl:text-xl">
-            {stories[userIndex].testimony}
-            <br />
-          </p>
-          <p className="mt-2 font-bold">~ {stories[userIndex].name}</p>
-          <p className=" text-sm text-appYellow10">{stories[userIndex].role}</p>
-          <span className="flex text-appYellow100 mt-6 mb-2">
-            <AiOutlinePlus />
-            Connect now
-          </span>
-          <div className="text-appYellow200 text-sm  font-bold flex gap-2 items-center cursor-pointer">
-            <br />
-            {stories[userIndex].linkedin && (
-              <div>
-                <a
-                  href={stories[userIndex].linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center"
-                >
-                  <AiFillLinkedin color="#0072b1" size={30} /> {stories[userIndex].name}
-                </a>
-              </div>
-            )}
-            {stories[userIndex].twitter && (
-              <div>
-                <a
-                  href={`https://twitter.com/${stories[userIndex].twitter}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center"
-                >
-                  <AiFillTwitterCircle size={30} color="#1DA1F2" />@{stories[userIndex].twitter}
-                </a>
-              </div>
-            )}
-          </div>
-        </article>
-
-        <section className="col-span-4 font-poppins flex gap-3 overflow-scroll pb-2 ">
-          {stories.map((user, index) => {
-            return (
-              <figure
+    <section className="bg-darkblue py-20">
+      <div className="responsive-padx-container">
+        <h2 className="text-4xl font-bold text-center text-white mb-12">
+          Success <span className="text-appYellow200">Stories</span>
+        </h2>
+        <div className="grid lg:grid-cols-3 gap-12 items-start">
+          <div className="lg:col-span-1 space-y-4">
+            {stories.map((user, index) => (
+              <div
                 key={index}
-                className={`w-60 flex-shrink-0 hover:bg-appYellow200 h-[450px] rounded-t-xl overflow-hidden rounded-b-lg text-appGray100 hover:text-appGray900 hover:scale-95 transition-all cursor-pointer ${
-                  index == userIndex && "bg-appYellow200"
-                }`}
+                className={`p-4 rounded-lg cursor-pointer transition-all duration-300 ${userIndex === index ? 'bg-appYellow200 text-appBlack' : 'bg-darkash text-white'}`}
                 onClick={() => setUserIndex(index)}
               >
-                <img
-                  className="h-52 w-full "
-                  src={user.photo}
-                  alt="CTC user"
-                />
-
-                <figcaption className="px-4 pt-3 pb-8  text-xs">
-                  <h5 className="text-base font-semibold">{user.name}</h5>
-                  <h6 className="font-medium mb-3">{user.role}</h6>
-                  {/* <p className="font-normal mb-2">Best Technologies</p> */}
-                  <p className="font-light">
-                    {trimString(user.testimony, 100)}
-                  </p>
-                </figcaption>
-              </figure>
-            );
-          })}
-        </section>
+                <div className="flex items-center">
+                  <img src={user.photo} alt={user.name} className="w-12 h-12 rounded-full object-cover mr-4" />
+                  <div>
+                    <h3 className="font-bold text-lg">{user.name}</h3>
+                    <p className={`${userIndex === index ? 'text-appAsh' : 'text-ash'}`}>{user.role}</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+          <div className="lg:col-span-2 bg-darkash p-8 rounded-lg shadow-lg">
+            <p className="text-lightash text-lg mb-6 leading-relaxed">{stories[userIndex].testimony}</p>
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                {stories[userIndex].linkedin && (
+                  <a href={stories[userIndex].linkedin} target="_blank" rel="noopener noreferrer">
+                    <AiFillLinkedin size={30} className="text-appYellow200 hover:text-appYellow100" />
+                  </a>
+                )}
+                {stories[userIndex].twitter && (
+                  <a href={`https://twitter.com/${stories[userIndex].twitter}`} target="_blank" rel="noopener noreferrer">
+                    <AiFillTwitterCircle size={30} className="text-appYellow200 hover:text-appYellow100" />
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -14,30 +14,29 @@ const UpcomingEvents = (): JSX.Element => {
       day: "20",
     },
   ];
+
   return (
-    <section className="responsive-padx-container pt-16 pb-11 font-p">
-      <h4 className="font-comforta text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-appGray200 font-weight-700 text-center ">
-        Upcoming Events
-      </h4>
-
-      <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 place-items-center mt-14 gap-x-3 gap-y-12 ">
-        {upcomingEvents.map((event, index) => {
-          return (
-            <EventsCard isLast={index + 1 === 3} event={event} key={index} />
-          );
-        })}
-      </ul>
-
-      {upcomingEvents.length > 3 && (
-        <div className="flex">
-          <Link
-            className="mx-auto mt-16 bg-appYellow200 px-6 text-base py-3 rounded-md font-poppins font-medium text-appGray900 hover:scale-110 transition-all"
-            to="/events"
-          >
-            More
-          </Link>
-        </div>
-      )}
+    <section className="bg-darkblue py-20 font-comforta">
+      <div className="responsive-padx-container">
+        <h2 className="text-4xl font-bold text-center text-white mb-12">
+          Upcoming <span className="text-appYellow200">Events</span>
+        </h2>
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          {upcomingEvents.map((event, index) => (
+            <EventsCard event={event} key={index} />
+          ))}
+        </ul>
+        {upcomingEvents.length > 3 && (
+          <div className="text-center mt-16">
+            <Link
+              className="inline-block px-8 py-4 bg-appYellow200 text-appBlack hover:bg-appYellow100 transition-all font-poppins font-bold rounded-full text-lg"
+              to="/events"
+            >
+              View More Events
+            </Link>
+          </div>
+        )}
+      </div>
     </section>
   );
 };
